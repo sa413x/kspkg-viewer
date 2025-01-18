@@ -1,0 +1,1485 @@
+btnBack=НАЗАД
+btnExit=ВЫХОД
+
+# Главное меню
+mainMenuDrive=ЕЗДА
+mainMenuVehiclesHub=АВТО
+mainMenuDriverCenter=ВОДИТЕЛЬ
+mainMenuCarDealer=АВТОСАЛОН
+mainMenuPartsShop=МАГАЗИН ЗАПЧАСТЕЙ
+mainMenuCustomizeVehicle=НАСТРОЙКА ТРАНСПОРТА
+mainMenuDrigingAcademy=АКАДЕМИЯ
+mainMenuDrivingCenter=ЦЕНТР ВОЖДЕНИЯ
+mainMenuGallery=ГАЛЕРЕЯ
+mainMenuTutorials=ОБУЧЕНИЕ
+mainMenuSettings=НАСТРОЙКИ
+mainMenuVehicleSetup=НАСТРОЙКА ТРАНСПОРТА
+mainMenuQuit=ВЫХОД
+
+mainMenuNextSession=СЛЕДУЮЩАЯ СЕССИЯ
+mainMenuRestartSession=ПЕРЕЗАПУСТИТЬ СЕССИЮ
+mainMenuRestartSeason=ПЕРЕЗАПУСТИТЬ СЕЗОН
+
+headerSettings=Настройки
+headerVideo=Видео
+headerGeneral=Общее
+headerControls=Управление
+headerCredits=Авторы
+
+headerSinglePlayer=Одиночная игра
+headerTrackSelection=Выбор трассы
+headerCarSelection=Выбор транспорта
+headerGameMode=Режим игры
+headerWeatherSettings=Погода
+headerAssistsSettings=Помощь
+headerRealismSettings=Реализм
+headerCustomizeVehicle=Настройка транспорта
+headerGridEditor=Редактор решетки
+
+headerMultiplayer=Многопользовательская игра
+headerServerList=Список серверов
+headerSpecialEvents=Особые события
+headerLeagues=Лиги
+headerVehiclesHub=Центр транспорта
+headerYourGarage=Гараж
+headerDealership=Автосалон
+headerRental=Аренда
+panelYourGarage=ГАРАЖ
+panelDealership=АВТОСАЛОН
+panelRent=АРЕНДА
+panelUsedVehicles=БУ ТРАНСПОРТ
+panelServerList=СПИСОК СЕРВЕРОВ
+panelSpecialEvents=ОСОБЫЕ СОБЫТИЯ
+panelLeagues=ЛИГИ
+
+btnRefresh=ОБНОВИТЬ
+btnLan=LAN
+btnPing=ПИНГ
+btnPlayers=ИГРОКИ
+btnJoin=ПРИСОЕДИНИТЬСЯ
+btnSpectate=НАБЛЮДАТЬ
+labelSortBy=СОРТИРОВАТЬ ПО
+labelXPPoints=ОЧКИ XP
+labelNewRank=НОВЫЙ РАНГ
+
+lblSplashWelcome=Добро пожаловать в превью Assetto Corsa Evo. Это предварительная версия, которая позволяет вам поиграть до официального выхода полной версии. Данная версия может содержать неполный контент и функции. Со временем будут добавляться новые возможности и улучшения. Спасибо за вашу поддержку и отзывы.
+lblSplashRights_01=2025 KUNOS Simulazioni Srl. Разработано KUNOS Simulazioni Srl. Логотип Assetto Corsa EVO — зарегистрированный товарный знак KUNOS Simulazioni Srl. Все права защищены.
+lblSplashRights_02=FMOD Studio, Copyright Firelight Technologies Pty, Ltd. Части этого программного обеспечения используют технологию SpeedTree® (©2020 Interactive Data Visualization, Inc). SpeedTree является зарегистрированным товарным знаком Interactive Data Visualization, Inc.
+lblSplashRights_03=Производители, автомобили, названия, бренды и связанная с ними символика, представленные в игре, являются товарными знаками и/или объектами авторского права их владельцев. Лицензировано Ferrari SpA. Название FERRARI и логотипы принадлежат Ferrari Spa.
+lblSplashRights_04=ИСПОЛЬЗОВАНИЕ ДАННОГО ПО ОБЩЕСТВЕННО, ИЛИ В КОММЕРЧЕСКИХ, РАЗВЛЕКАТЕЛЬНЫХ ИЛИ ОБУЧАЮЩИХ ЦЕЛЯХ БЕЗ ЯВНОГО ПИСЬМЕННОГО РАЗРЕШЕНИЯ KUNOS SIMULAZIONI SRL ЗАПРЕЩЕНО.
+
+
+lblTutorialStep1=В Assetto Corsa EVO вам нужно будет открывать водительские лицензии для управления транспортными средствами.
+lblTutorialStep2=Вы начнете с ЛИЦЕНЗИИ НАЧИНАЮЩЕГО, которая подходит для группы начальных автомобилей.
+lblTutorialStep3=Лицензии дают доступ к новым группам автомобилей и позволяют покупать или арендовать транспорт.
+lblTutorialStep4=Аренда имеет низкую стоимость и высокую гибкость, в то время как покупка позволяет настроить автомобиль.
+lblTutorialStep5=ПОЛУЧИТЕ ВОДИТЕЛЬСКУЮ ЛИЦЕНЗИЮ
+lblTutorialStep6=РАЗБЛОКИРУЙТЕ ГРУППЫ АВТОМОБИЛЕЙ
+lblTutorialStep7=ЕЗДИТЕ
+lblTutorialStep8=АРЕНДУЙТЕ АВТОМОБИЛЬ
+lblTutorialStep9=КУПИТЕ АВТОМОБИЛЬ
+lblTutorialStep10=Вы можете играть так, как вам нравится, через одиночный, многопользовательский режим или особые события.
+lblTutorialStep11=Во всех ранговых сценариях вы будете получать очки опыта (XP), что улучшит ваш ранг и принесет виртуальные кредиты (v$).
+lblTutorialStep12=Тратьте виртуальные кредиты на аренду, покупку или настройку автомобилей.
+lblTutorialStep13=ЗАРАБАТЫВАЙТЕ XP = ПОВЫШАЙТЕ РАНГ
+lblTutorialStep14=ЗАРАБАТЫВАЙТЕ КРЕДИТЫ ДЛЯ РАСХОДОВ
+lblTutorialStep15=Добро пожаловать в ранний доступ. Давайте инициализируем ваш профиль. Заполните данные и купите свой первый автомобиль.
+btnPanelGarage=ГАРАЖ
+btnPanelRental=АРЕНДА
+lblSessionConsumables=РАСХОДНЫЕ МАТЕРИАЛЫ
+
+headerDriverCenter=Профиль водителя
+
+settingsControls=УПРАВЛЕНИЕ
+settingsVideo=ВИДЕО
+settingsAudio=ЗВУК
+settingsGeneral=ОБЩЕЕ
+settingsGameplay=ГЕЙМПЛЕЙ / HUD
+settingsHud=HUD
+settingsCredits=АВТОРЫ
+settingsEULA=ПОЛЬЗОВАТЕЛЬСКОЕ СОГЛАШЕНИЕ
+
+lblGameplaySettings=ГЕЙМПЛЕЙ
+lblHUDSettings=HUD
+
+lblHudUnitOfMeasurement=ЕДИНИЦЫ ИЗМЕРЕНИЯ
+lblHudSpeedometer=СПИДОМЕТР
+lblHudTyresWidget=ВИДЖЕТ ШИН
+lblHudDamageWidget=ВИДЖЕТ УРОНА
+lblHudSessionInfo=ИНФОРМАЦИЯ О СЕССИИ
+lblHudChronometer=ХРОНОМЕТР
+lblHudTrackMap=КАРТА ТРАССЫ
+
+lblGameplayLanguage=ЯЗЫК
+lblGameplayOnlineMode=ОНЛАЙН РЕЖИМ
+lblGameplaySkipIntro=ПРОПУСТИТЬ ВСТУПЛЕНИЕ
+PlayerMode_Online=ОНЛАЙН
+PlayerMode_Offline=ОФФЛАЙН
+PlayerMode_Guest=ГОСТЬ
+
+optionMetric=МЕТРИЧЕСКАЯ
+optionImperial=ИМПЕРСКАЯ
+
+headerGameplay=Геймплей
+headerAudio=Аудио
+headerAudioPresets=Аудио пресеты
+labelAudioDevices=Аудио устройства
+volumeMaster=Главный
+volumeEngine=Двигатель
+volumeEngineInterior=Внутри автомобиля
+volumeEngineExterior=Снаружи автомобиля
+volumeTyres=Шины
+volumeWind=Ветер / Аэродинамика
+volumeBodywork=Кузов
+volumeEnvironment=Окружение
+volumeMusic=Музыка
+volumeUserInterface=Интерфейс
+volumeParts=Детали
+
+# Подменю
+lblTrackRacing=Трековые гонки
+lblSinglePlayer=ОДИНОЧНАЯ ИГРА
+lblMultiPlayer=МУЛЬТИПЛЕЕР
+lblOpenWorld=СВОБОДНОЕ ПЕРЕМЕЩЕНИЕ
+
+lblViewSettingsCamera=КАМЕРА
+lblViewSettingsMotion=ДВИЖЕНИЕ
+lblViewSettingsWheel=РУЛЬ И ПАНЕЛЬ
+lblViewSettingsMirrors=ЗЕРКАЛА
+lblViewSettingsTripleScreen=ТРЕХЭКРАННЫЙ РЕЖИМ
+
+
+lblViewSettingsVRMirrorFOV=ПОЛЕ ЗРЕНИЯ ВИРТУАЛЬНОГО ЗЕРКАЛА
+lblViewSettingsVRMirrorYaw=НАПРАВЛЕНИЕ ВИРТУАЛЬНОГО ЗЕРКАЛА
+lblViewSettingsVRMirrorPitch=УГОЛ НАКЛОНА ВИРТУАЛЬНОГО ЗЕРКАЛА
+lblViewSettingsMirrorFOV=ПОЛЕ ЗРЕНИЯ ЗЕРКАЛА
+lblViewSettingsMirrorYaw=НАПРАВЛЕНИЕ ЗЕРКАЛА
+lblViewSettingsMirrorPitch=УГОЛ НАКЛОНА ЗЕРКАЛА
+lblViewSettingsSingleMirrorFOV=ПОЛЕ ЗРЕНИЯ ОДИНОЧНОГО ЗЕРКАЛА
+lblViewSettingsVMEnable=ВКЛЮЧИТЬ ВИРТУАЛЬНОЕ ЗЕРКАЛО
+lblViewSettingsVMScale=МАСШТАБ ВИРТУАЛЬНОГО ЗЕРКАЛА
+lblViewSettingsVMHorizontalOffset=ГОРИЗОНТАЛЬНЫЙ СМЕЩЕНИЕ
+lblViewSettingsVMVerticalOffset=ВЕРТИКАЛЬНОЕ СМЕЩЕНИЕ
+
+labelApply=Применить
+labelYes=Да
+lableNo=Нет
+labelConfirm=Подтвердить
+labelCancel=Отмена
+labelDiscard=Отменить изменения
+labelDelete=Удалить
+labelOK=ОК
+labelApplyAndContinue=Применить и продолжить
+labelDiscardAndContinue=Отменить и продолжить
+lblChangesDetected=Внимание: есть несохраненные изменения
+msgChangesWarning=Сохранить изменения перед продолжением?
+lblWarning=Предупреждение
+lblError=Ошибка
+lblPleaseWait=Подождите
+msgAreYouSureDelete=Вы уверены, что хотите удалить этот файл?
+msgAreYouSureOverwrite=Вы уверены, что хотите перезаписать этот файл?
+msgSavingDriverProfile=Сохранение профиля водителя.
+msgOperationTooLong=Операция занимает слишком много времени. Попробуйте позже.
+lblAreYouSure=Вы уверены?
+lblExitGame=Выход из игры
+msgAreYouSureExitGame=Вы уверены, что хотите выйти из игры?
+
+btnConfirm=ПОДТВЕРДИТЬ
+btnSave=СОХРАНИТЬ
+btnLoad=ЗАГРУЗИТЬ
+btnDelete=УДАЛИТЬ
+btnOverwrite=ПЕРЕЗАПИСАТЬ
+btnPrevious=ПРЕДЫДУЩИЙ
+btnNext=СЛЕДУЮЩИЙ
+btnContinue=ПРОДОЛЖИТЬ
+
+panelSelectCar=ТРАНСПОРТ
+panelSelectGameMode=РЕЖИМ ИГРЫ
+panelSelectTrack=ТРАССА
+panelWeatherSettings=ПОГОДА
+panelAssists=ПОМОЩНИКИ
+panelRealism=РЕАЛИЗМ
+btnStartSession=НАЧАТЬ СЕССИЮ
+
+lblNextService=СЛЕДУЮЩЕЕ ОБСЛУЖИВАНИЕ
+lblVehicleValue=СТОИМОСТЬ ТРАНСПОРТА
+lblPerformanceIndicator=ПОКАЗАТЕЛЬ ПРОИЗВОДИТЕЛЬНОСТИ
+lblPlayerLicenseOverall=ЛИЦЕНЗИЯ (Общая)
+lblPlayerExperience=ОПЫТ
+lblPlayerRank=РАНГ
+lblPlayerWallet=КОШЕЛЕК
+
+panelBrand=БРЕНД
+panelModel=МОДЕЛЬ
+panelConfiguration=КОНФИГУРАЦИЯ
+panelColorPreset=ПРЕДУСТАНОВКА ЦВЕТА
+
+headerBrandSelection=Выбор бренда
+headerModelSelection=Выбор модели
+headerVariantSelection=Выбор версии
+
+panelOwnVehicles=СВОИ
+panelRentalVehicles=АРЕНДА
+
+btnLivery=ОКРАСКА
+btnCustomParts=КОРПУСНЫЕ ЧАСТИ
+btnRimsCaps=ДИСКИ И КОЛПАКИ
+btnDecals=ДЕКОР
+
+headerPartsShop=Магазин запчастей
+btnFullKits=КОМПЛЕКТЫ
+btnBrakes=ТОРМОЗА
+btnBodywork=КУЗОВ
+btnWheels=КОЛЕСА
+btnPowertrain=СИЛОВАЯ УСТАНОВКА
+btnSuspension=ПОДВЕСКА
+btnInterior=САЛОН
+btnSelectCar=ВЫБРАТЬ ТРАНСПОРТ
+btnApply=ПРИМЕНИТЬ
+btnCancel=ОТМЕНА
+btnReset=СБРОСИТЬ
+btnDiscard=ОТМЕНИТЬ ИЗМЕНЕНИЯ
+btnManagePresets=УПРАВЛЕНИЕ ПРЕСЕТАМИ
+btnClose=ЗАКРЫТЬ
+btnSkipAll=ПРОПУСТИТЬ ВСЕ
+btnSkipTutorial=ПРОПУСТИТЬ ОБУЧЕНИЕ
+btnCustomize=НАСТРОИТЬ
+btnCustomizeAvatar=НАСТРОИТЬ АВАТАР
+btnPurchase=КУПИТЬ
+btnTestDrive=ТЕСТ-ДРАЙВ
+btnCarOptions=ОПЦИИ АВТО
+btnSceneOptions=НАСТРОЙКИ СЦЕНЫ
+btnConfigure=КОНФИГУРИРОВАТЬ
+
+headerNewDriver=Новый водитель
+headerFirstCar=Выберите первый автомобиль
+
+headerPartsSelector=Выбор запчастей
+
+MirrorResolution_High=ВЫСОКОЕ
+MirrorResolution_Low=НИЗКОЕ
+MirrorResolution_Medium=СРЕДНЕЕ
+MirrorViewDistance_High=ВЫСОКОЕ
+MirrorViewDistance_Low=НИЗКОЕ
+MirrorViewDistance_Medium=СРЕДНЕЕ
+MirrorViewDistance_Ultra=УЛЬТРА
+headerVideoPresets=Видео пресеты
+
+labelPostProcessingPresets=Постобработка
+videoSettingsAlternateRendering=ОПТИМИЗИРОВАННЫЙ РЕНДЕРИНГ
+videoSettingsAmbientOcclusion=АМБИЕНТНОЕ ЗАТЕНЕНИЕ
+videoSettingsAnisotropic=АНИЗОТРОПНАЯ ФИЛЬТРАЦИЯ
+videoSettingsAspectRatio=ФОРМАТ ЭКРАНА
+videoSettingsCarReflection=ОТРАЖЕНИЯ НА АВТО
+videoSettingsCloudsQuality=КАЧЕСТВО ОБЛАКОВ
+videoSettingsDepthOfField=ГЛУБИНА РЕЗКОСТИ
+videoSettingsDepthOfFieldQuality=КАЧЕСТВО ГЛУБИНЫ РЕЗКОСТИ
+videoSettingsDisplay=ДИСПЛЕЙ
+videoSettingsEnvironmentReflection=ОТРАЖЕНИЯ ОКРУЖЕНИЯ
+videoSettingsExperimentalSimShadows=ЭКСПЕРИМЕНТАЛЬНЫЕ ТЕНИ
+videoSettingsExperimentalStaticLOD=ЭКСПЕРИМЕНТАЛЬНЫЙ СТАТИЧЕСКИЙ УРОВЕНЬ ДЕТАЛЕЙ
+videoSettingsExposure=ЭКСПОЗИЦИЯ
+videoSettingsFidelityFXCAS=FIDELITY FX (КОНТРАСТНОЕ УЛУЧШЕНИЕ)
+videoSettingsFilmicAntialiasing=КИНОАНТИАЛИАСИНГ
+videoSettingsFullscreen=ПОЛНОЭКРАННЫЙ РЕЖИМ
+videoSettingsFXAA=FXAA
+videoSettingsGameplayFPSLimit=ОГРАНИЧЕНИЕ FPS В ИГРЕ
+videoSettingsGlobalIllumination=ЧАСТОТА ОБНОВЛЕНИЯ ГЛОБАЛЬНОГО ОСВЕЩЕНИЯ
+videoSettingsGraphics=ГРАФИКА
+videoSettingsGraphicsPreset=ПРЕСЕТ ГРАФИКИ
+videoSettingsGrass=ПЛОТНОСТЬ ТРАВЫ
+videoSettingsLevelOfDetail=УРОВЕНЬ ДЕТАЛЕЙ
+videoSettingsMirrorMode=РЕЖИМ ЗЕРКАЛ
+videoSettingsMirrorResolution=РАЗРЕШЕНИЕ ЗЕРКАЛ
+videoSettingsMirrorViewDistance=ДИСТАНЦИЯ ОТОБРАЖЕНИЯ В ЗЕРКАЛАХ
+videoSettingsMonitor=МОНИТОР
+videoSettingsMotionBlurCentralQuality=КАЧЕСТВО МОЦИОННОГО РАЗМЫТИЯ
+videoSettingsMotionBlurQuality=КАЧЕСТВО РАЗМЫТИЯ
+videoSettingsMotionBlurStrength=ИНТЕНСИВНОСТЬ РАЗМЫТИЯ
+videoSettingsMSAA=MSAA
+videoSettingsMultiMode=РЕЖИМ ЗАХВАТА ЗЕРКАЛ
+videoSettingsOccludedFPSLimit=ОГРАНИЧЕНИЕ FPS ПРИ СКРЫТОСТИ
+videoSettingsParticles=ЧАСТИЦЫ
+videoSettingsPostProcessingPresets=ПРЕСЕТЫ ПОСТОБРАБОТКИ
+videoSettingsResolution=РАЗРЕШЕНИЕ
+videoSettingsScreenSpaceShadows=ТЕНИ НА ПОВЕРХНОСТЯХ
+videoSettingsSectionAA=АНТИАЛИАСИНГ
+videoSettingsSectionDisplay=ДИСПЛЕЙ
+videoSettingsSectionEnvironment=ОКРУЖЕНИЕ
+videoSettingsSectionLighting=ОСВЕЩЕНИЕ
+videoSettingsSectionLOD=УРОВЕНЬ ДЕТАЛЕЙ
+videoSettingsSectionMirrors=ЗЕРКАЛА
+videoSettingsSectionMotionBlur=РАЗМЫТИЕ
+videoSettingsSectionPP=ПОСТОБРАБОТКА
+videoSettingsSectionReflections=ОТРАЖЕНИЯ
+videoSettingsSectionShadows=ТЕНИ
+videoSettingsSectionTexture=ТЕКСТУРЫ
+videoSettingsSectionUpscaling=МАСШТАБИРОВАНИЕ
+videoSettingsShadows=ТЕНИ
+videoSettingsSharpening=РЕЗКОСТЬ
+videoSettingsSideMirrorResolution=РАЗРЕШЕНИЕ БОКОВЫХ ЗЕРКАЛ
+videoSettingsSimShadows=ИМИТАЦИЯ ТЕНЕЙ
+videoSettingsStaticLevelOfDetail=СТАТИЧЕСКИЙ УРОВЕНЬ ДЕТАЛЕЙ
+videoSettingsTexturePoolSize=РАЗМЕР ПУЛА ТЕКСТУР
+videoSettingsTripleScreen=ТРЕХЭКРАННЫЙ РЕЖИМ
+videoSettingsTripleScreenDistance=ДИСТАНЦИЯ ДО ЭКРАНОВ
+videoSettingsTripleScreenScreenAngle=УГОЛ ЭКРАНА
+videoSettingsTripleScreenScreenBezel=ШИРИНА РАМКИ
+videoSettingsTripleScreenWidth=ШИРИНА ЭКРАНА
+videoSettingsUpscalingDLSSPreset=ПРЕСЕТ DLSS
+videoSettingsUpscalingFSR3Preset=ПРЕСЕТ FSR3
+videoSettingsUpscalingMode=РЕЖИМ МАСШТАБИРОВАНИЯ
+videoSettingsVehicleLevelOfDetail=УРОВЕНЬ ДЕТАЛЕЙ ТРАНСПОРТА
+videoSettingsVeil=ЭФФЕКТ ВОАЛА
+videoSettingsVeilType=ТИП ЭФФЕКТА ВОАЛА
+videoSettingsVerticalSync=ВЕРТИКАЛЬНАЯ СИНХРОНИЗАЦИЯ
+videoSettingsVolumetrics=ОБЪЕМНЫЕ ЭФФЕКТЫ
+videoSettingsWorldDetail=ДЕТАЛИ ОКРУЖЕНИЯ
+
+AmbientOcclusionQuality_High=ВЫСОКОЕ
+AmbientOcclusionQuality_Low=НИЗКОЕ
+AmbientOcclusionQuality_Medium=СРЕДНЕЕ
+AmbientOcclusionQuality_Off=ВЫКЛ.
+AmbientOcclusionQuality_Ultra=УЛЬТРА
+AnisotropicFilteringQuality_High=ВЫСОКОЕ
+AnisotropicFilteringQuality_Low=НИЗКОЕ
+AnisotropicFilteringQuality_Medium=СРЕДНЕЕ
+AnisotropicFilteringQuality_Ultra=УЛЬТРА
+AnisotropicFilteringQuality_VeryLow=ОЧЕНЬ НИЗКОЕ
+CarReflectionQuality_High=ВЫСОКОЕ
+CarReflectionQuality_Low=НИЗКОЕ
+CarReflectionQuality_Medium=СРЕДНЕЕ
+CarReflectionQuality_Ultra=УЛЬТРА
+CloudsQuality_High=ВЫСОКОЕ
+CloudsQuality_Low=НИЗКОЕ
+CloudsQuality_Medium=СРЕДНЕЕ
+CloudsQuality_Ultra=УЛЬТРА
+DepthOfFieldQuality_High=ВЫСОКОЕ
+DepthOfFieldQuality_Low=НИЗКОЕ
+DepthOfFieldQuality_Medium=СРЕДНЕЕ
+DepthOfFieldQuality_Off=ВЫКЛ.
+DepthOfFieldQuality_Ultra=УЛЬТРА
+DLSS_Balanced=СБАЛАНСИРОВАННО
+DLSS_DLAA=DLAA
+DLSS_Performance=ПРОИЗВОДИТЕЛЬНОСТЬ
+DLSS_Quality=КАЧЕСТВО
+DLSS_UltraQuality=УЛЬТРА КАЧЕСТВО
+EnvironmentReflectionQuality_High=ВЫСОКОЕ
+EnvironmentReflectionQuality_Low=НИЗКОЕ
+EnvironmentReflectionQuality_Medium=СРЕДНЕЕ
+FSR1_Balanced=СБАЛАНСИРОВАННО
+FSR1_Performance=ПРОИЗВОДИТЕЛЬНОСТЬ
+FSR1_Quality=КАЧЕСТВО
+FSR1_UltraQuality=УЛЬТРА КАЧЕСТВО
+FSR3_Balanced=СБАЛАНСИРОВАННО
+FSR3_NativeAA=ИЗНАЧАЛЬНОЕ AA
+FSR3_Performance=ПРОИЗВОДИТЕЛЬНОСТЬ
+FSR3_Quality=КАЧЕСТВО
+FSR3_UltraPerformance=УЛЬТРА ПРОИЗВОДИТЕЛЬНОСТЬ
+FSR3_UltraQuality=УЛЬТРА КАЧЕСТВО
+GlobalIlluminationUpdateFrequency_High=ВЫСОКОЕ
+GlobalIlluminationUpdateFrequency_Medium=СРЕДНЕЕ
+GlobalIlluminationUpdateFrequency_Ultra=УЛЬТРА
+GrassDensity_High=ВЫСОКОЕ
+GrassDensity_Low=НИЗКОЕ
+GrassDensity_Medium=СРЕДНЕЕ
+GrassDensity_Off=ВЫКЛ.
+GrassDensity_Ultra=УЛЬТРА
+LevelOfDetailQuality_High=ВЫСОКОЕ
+LevelOfDetailQuality_Low=НИЗКОЕ
+LevelOfDetailQuality_Medium=СРЕДНЕЕ
+LevelOfDetailQuality_StaticHigh=СТАТИЧЕСКОЕ ВЫСОКОЕ
+LevelOfDetailQuality_StaticLow=СТАТИЧЕСКОЕ НИЗКОЕ
+LevelOfDetailQuality_StaticMedium=СТАТИЧЕСКОЕ СРЕДНЕЕ
+LevelOfDetailQuality_Ultra=УЛЬТРА
+Mirror_Multi=МНОЖЕСТВЕННЫЕ
+Mirror_Off=ВЫКЛ.
+Mirror_Single=ОДНО
+MirrorResolution_1024x256=1024X256
+MirrorResolution_1024x256=1024X256
+MirrorResolution_1024x512=1024X512
+MirrorResolution_2048x512=2048X512
+MirrorResolution_256x128=256X128
+MirrorResolution_512x128=512X128
+MirrorResolution_512x256=512X256
+MirrorResolution_512x256=512X256
+MotionBlurQuality_High=ВЫСОКОЕ
+MotionBlurQuality_Low=НИЗКОЕ
+MotionBlurQuality_Medium=СРЕДНЕЕ
+MotionBlurQuality_Off=ВЫКЛ.
+MotionBlurQuality_Ultra=УЛЬТРА
+MSAA_2x=2X
+MSAA_4x=4X
+MSAA_4x=4X
+MSAA_8x=8X
+MSAA_Off=ВЫКЛ.
+Multi_Fixed=ФИКСИРОВАННЫЙ
+Multi_VR=ДИНАМИЧЕСКИЙ
+ParticlesQuality_High=ВЫСОКОЕ
+ParticlesQuality_Low=НИЗКОЕ
+ParticlesQuality_Medium=СРЕДНЕЕ
+ScreenSpaceShadowQuality_0ff=ВЫКЛ.
+ScreenSpaceShadowQuality_FullRes=ПОЛНОЕ РАЗРЕШЕНИЕ
+ScreenSpaceShadowQuality_HalfRes=ПОЛОВИННОЕ РАЗРЕШЕНИЕ
+ShadowQuality_High=ВЫСОКОЕ
+ShadowQuality_Low=НИЗКОЕ
+ShadowQuality_Medium=СРЕДНЕЕ
+ShadowQuality_SimHigh=СИМ ВЫСОКОЕ
+ShadowQuality_SimLow=СИМ НИЗКОЕ
+ShadowQuality_SimMedium=СИМ СРЕДНЕЕ
+ShadowQuality_Ultra=УЛЬТРА
+ShadowQuality_VeryLow=ОЧЕНЬ НИЗКОЕ
+SimShadowQuality_High=ВЫСОКОЕ
+SimShadowQuality_High=ВЫСОКОЕ
+SimShadowQuality_Low=НИЗКОЕ
+SimShadowQuality_Low=НИЗКОЕ
+SimShadowQuality_Medium=СРЕДНЕЕ
+SimShadowQuality_Medium=СРЕДНЕЕ
+StaticLevelOfDetailQuality_High=ВЫСОКОЕ
+StaticLevelOfDetailQuality_Low=НИЗКОЕ
+StaticLevelOfDetailQuality_Medium=СРЕДНЕЕ
+TexturePoolSize_High=ВЫСОКОЕ
+TexturePoolSize_Low=НИЗКОЕ
+TexturePoolSize_Medium=СРЕДНЕЕ
+TexturePoolSize_Ultra=УЛЬТРА
+Type_Balanced=СБАЛАНСИРОВАННЫЙ
+Type_Cinematic=КИНО
+Type_Off=ВЫКЛ.
+Type_Sharp=РЕЗКИЙ
+Type_Showroom=ШОУРУМ
+Upscaling_DLSS=DLSS
+Upscaling_FSR1=FSR1
+Upscaling_FSR3=FSR3
+Upscaling_None=НЕТ
+VehicleLevelOfDetailQuality_High=ВЫСОКОЕ
+VehicleLevelOfDetailQuality_Low=НИЗКОЕ
+VehicleLevelOfDetailQuality_Medium=СРЕДНЕЕ
+VehicleLevelOfDetailQuality_Ultra=УЛЬТРА
+Veil_Cinematic=КИНО
+Veil_Natural=ЕСТЕСТВЕННО
+Veil_Off=ВЫКЛ.
+Veil_Soft=МЯГКИЙ
+VolumetricsQuality_High=ВЫСОКОЕ
+VolumetricsQuality_Low=НИЗКОЕ
+VolumetricsQuality_Medium=СРЕДНЕЕ
+
+labelResolutions=Поддерживаемые разрешения
+
+optionOn=ВКЛ.
+optionOff=ВЫКЛ.
+option2x=2x
+option4x=4x
+option8x=8x
+option16x=16x
+optionVeryLow=Очень низкое
+optionLow=Низкое
+optionMedium=Среднее
+optionHigh=Высокое
+optionUltra=Ультра
+optionCustom=Пользовательское
+
+videoOptionCustom=Пользовательское
+videoOptionVeryLow=Очень низкое
+videoOptionLow=Низкое
+videoOptionMedium=Среднее
+videoOptionHigh=Высокое
+videoOptionUltra=Ультра
+
+lblOnUpper=ВКЛ.
+lblOffUpper=ВЫКЛ.
+lblFreeUpper=СВОБОДНО
+
+lblErrorLoadingProfile=Ошибка загрузки профиля
+lblErrorUpdatingProfile=Ошибка обновления профиля
+msgErrorLoadingUserProfile=Ошибка загрузки профиля водителя.
+btnReturn=ВЕРНУТЬСЯ
+
+
+NOUSER=Не найден водитель с указанным идентификатором.
+BACKENDDISCONNECTED=Ошибка связи с сервером, повторите попытку.
+
+
+headerActiveDriver=АКТИВНЫЙ ВОДИТЕЛЬ
+labelName=ИМЯ
+labelSurname=ФАМИЛИЯ
+labelNickname=ПСЕВДОНИМ
+labelNationality=СТРАНА / ТЕРРИТОРИЯ
+btnEditDriverInfo=ИЗМЕНИТЬ ИНФОРМАЦИЮ
+headerSwitchDriverProfile=СМЕНИТЬ ПРОФИЛЬ ВОДИТЕЛЯ
+btnCreateNewDriver=СОЗДАТЬ НОВОГО ВОДИТЕЛЯ
+labelDriverProfiles=Профили водителей
+labelProfileUpper=ПРОФИЛЬ
+labelStatisticsUpper=СТАТИСТИКА
+
+labelOnline=ОНЛАЙН
+labelOffline=ОФФЛАЙН
+labelOnlineServices=ОНЛАЙН-СЕРВИСЫ
+
+headerNoActiveDriver=АКТИВНЫЙ ВОДИТЕЛЬ ОТСУТСТВУЕТ
+headerNoDriversAvailable=ДОСТУПНЫХ ВОДИТЕЛЕЙ НЕТ
+
+labelCountry=СТРАНА / ТЕРРИТОРИЯ
+
+labelSkill=УМЕНИЕ
+labelSafety=БЕЗОПАСНОСТЬ
+labelCompetitiveness=СОПЕРНИЧЕСТВО
+labelInitials=ИНИЦИАЛЫ
+labelAge=ВОЗРАСТ
+
+
+msgInvalidFilename=Указано недопустимое имя файла.
+
+btnBodyWork=Кузов
+btnRims=Диски
+btnCompounds=Шины
+btnParts=Запчасти
+
+lblConfirmResolution=Подтверждение разрешения
+msgConfirmResolutionChange=Вы хотите подтвердить текущее разрешение?
+
+totalXPSessionEconomy=XP
+lblSessionEarnedCredits=Кредиты
+rankSessionEconomy=Ранг
+totalWalletSessionEconomy=Кошелек
+sessionEconomyFinished=Завершено
+
+lblQuitSession=Завершить сессию
+msgQuitSession=Прекратить текущую сессию и вернуться в главное меню?
+
+lblLoading=Пожалуйста, подождите
+msgLoadingSession=Загрузка ...
+
+lblError=ОШИБКА
+msgErrorLoadingCurrentCar=Ошибка получения информации о текущем автомобиле
+
+lblAll=Все
+GameModeType_HOTSTINT=HOTSTINT
+GameModeType_HOTLAP=HOTLAP
+GameModeType_PRACTICE=ТРЕНИРОВКА
+GameModeType_INSTANT_RACE=БЫСТРАЯ ГОНКА
+GameModeType_RACE_WEEKEND=ГОНОЧНЫЙ УИКЕНД
+GameModeType_SUPERPOLE=СУПЕРПОЛЬ
+GameModeType_CRUISE=КРУИЗ
+GameModeType_DRIFT=ДРИФТ
+GameModeType_A_TO_B=А ДО Б
+GameModeType_HOTSTINT=HOTSTINT
+GameModeType_HOTLAP=HOTLAP
+GameModeType_TEST_DRIVE=ТЕСТ-ДРАЙВ
+GameModeType_RALLY=РАЛЛИ
+
+lblPractice=ТРЕНИРОВКА
+lblInstantRace=БЫСТРАЯ ГОНКА
+lblRaceWeekend=ГОНОЧНЫЙ УИКЕНД
+
+
+GameModeSelectionWeatherType_CLEAR=ЯСНО
+GameModeSelectionWeatherType_SCATTERED_CLOUDS=РАССЕЯННЫЕ ОБЛАКА
+GameModeSelectionWeatherType_BROKEN_CLOUDS=РВАНЫЕ ОБЛАКА
+GameModeSelectionWeatherType_OVERCAST=ПАСМУРНО
+GameModeSelectionWeatherType_DRIZZLE=МОРОСИТ
+GameModeSelectionWeatherType_RAIN=ДОЖДЬ
+GameModeSelectionWeatherType_DAMP=СЫРО
+GameModeSelectionWeatherType_HEAVY_RAIN=СИЛЬНЫЙ ДОЖДЬ
+GameModeSelectionWeatherType_CUSTOM=ПОЛЬЗОВАТЕЛЬСКОЕ
+
+AssistPresetListType_BEGINNER=НАЧИНАЮЩИЙ
+AssistPresetListType_ROOKIE=НОВИЧОК
+AssistPresetListType_EXPERT=ЭКСПЕРТ
+AssistPresetListType_PRO=ПРОФЕССИОНАЛ
+AssistPresetListType_CUSTOM=ПОЛЬЗОВАТЕЛЬСКОЕ
+
+AssistPresetListType_BEGINNER_lower=Начинающий
+AssistPresetListType_ROOKIE_lower=Новичок
+AssistPresetListType_EXPERT_lower=Эксперт
+AssistPresetListType_PRO_lower=Профессионал
+AssistPresetListType_CUSTOM_lower=Пользовательский
+
+lblAssistAutoGear=АВТОМАТИЧЕСКАЯ КОРОБКА ПЕРЕДАЧ
+lblAssistAutomaticIgnition=АВТОМАТИЧЕСКИЙ ЗАПУСК
+lblAssistAutoPitlimiter=АВТОМАТИЧЕСКИЙ ОГРАНИЧИТЕЛЬ ПИТ-ЛЕЙНА
+lblAssistAutoClutch=АВТОМАТИЧЕСКОЕ СЦЕПЛЕНИЕ
+lblAssistAutoClutchStart=АВТОМАТИЧЕСКОЕ СЦЕПЛЕНИЕ ПРИ СТАРТЕ
+lblAssistStandingStart=ПОМОЩЬ НА СТАРТЕ
+lblAssistAutoBlip=АВТОМАТИЧЕСКАЯ ПОДГАЗОВКА
+lblAssistAutoHeadlights=АВТОМАТИЧЕСКИЕ ФАРЫ
+lblAssistAutoWipers=АВТОМАТИЧЕСКИЕ ДВОРНИКИ
+lblAssistStabilityControl=КОНТРОЛЬ СТАБИЛЬНОСТИ
+lblAssistIdealLine=ИДЕАЛЬНАЯ ТРАЕКТОРИЯ
+
+timeTablePosition=ПОЗИЦИЯ
+timeTableDriverName=ИМЯ ВОДИТЕЛЯ
+timeTableMake=МАРКА
+timeTableCarNumber=№
+timeTableSplit=СПЛИТ
+timeTableBestLap=ЛУЧШИЙ КРУГ
+timeTableRaceTime=ВРЕМЯ ГОНКИ
+
+labelTotalTime=ОБЩЕЕ ВРЕМЯ
+labelLapsDriven=ПРОЙДЕННЫЕ КРУГИ
+
+btnInputWheel=РУЛЬ
+btnInputController=КОНТРОЛЛЕР
+btnInputKeyboard=КЛАВИАТУРА
+
+lblMainClasses=ОСНОВНЫЕ КЛАССЫ
+
+lblCarANY=ЛЮБОЙ
+lblCarEVO=EVO
+lblCarLUXURY=ЛЮКС
+lblCarHERITAGE=НАСЛЕДИЕ
+lblCarRACING=ГОНОЧНЫЙ
+
+lblBuyVehicles=КУПИТЬ ТРАНСПОРТ
+lblBuyParts=КУПИТЬ ЗАПЧАСТИ
+lblCustomize=НАСТРОИТЬ
+
+lwrPassword=пароль
+lwrRequired=обязательно
+lwrNumeric=числовое
+lwrThreeLetters=3 буквы
+
+labelRequiredRank=ТРЕБУЕМЫЙ РАНГ
+
+lblOfflineMode=Оффлайн режим
+msgContinueOfflineMode=Не удалось подключиться к игровым онлайн-сервисам.<p>Игра продолжится в оффлайн-режиме.</p>
+msgUnableToGetAProperResponse=Не удалось получить корректный ответ от клиента (вернулся: NOUSER).
+
+labelIntegrity=Интеграция
+labelNextService=Следующее обслуживание
+labelSpecifications=Характеристики
+
+WeatherPreset_CLEAR=ЯСНО
+WeatherPreset_SUNNY=СОЛНЕЧНО
+WeatherPreset_CLOUDY=ОБЛАЧНО
+WeatherPreset_RAINY=ДОЖДЬ
+WeatherPreset_HEAVY_RAIN=СИЛЬНЫЙ ДОЖДЬ
+
+lblCustom=Пользовательский
+
+lblCloudCoverage=ПОКРЫТИЕ НЕБА
+lblCloudLevel=УРОВЕНЬ ОБЛАКОВ
+lblCloudWetness=ВЛАЖНОСТЬ ОБЛАКОВ
+lblCloudDensity=ПЛОТНОСТЬ ОБЛАКОВ
+lblPrecipitation=ОСАДКИ
+lblRainfall=ДОЖДЬ
+lblFogDensity=ПЛОТНОСТЬ ТУМАНА
+lblWindDirection=НАПРАВЛЕНИЕ ВЕТРА
+lblWindSpeed=СКОРОСТЬ ВЕТРА
+lblWindGusts=ПОРЫВЫ ВЕТРА
+lblAmbientTemperature=ТЕМПЕРАТУРА ВОЗДУХА
+lblAirTemperature=ТЕМПЕРАТУРА ВОЗДУХА
+lblTarmacTemperature=ТЕМПЕРАТУРА АСФАЛЬТА
+lblTrackCondition=СОСТОЯНИЕ ТРАССЫ
+lblTrackWetness=ВЛАЖНОСТЬ ТРАССЫ
+lblDynamicWeather=ДИНАМИЧЕСКАЯ ПОГОДА
+
+GameModeSelectionDuration_TIME=время
+GameModeSelectionDuration_LAPS=круги
+
+labelLaps=КРУГИ
+labelTime=ВРЕМЯ
+
+labelAbbHour=ЧАС
+labelAbbHours=ЧАСЫ
+labelAbbrMinute=МИН
+labelAbbrMinutes=МИНУТЫ
+
+lblAxis=ОСЬ
+lblClear=ОЧИСТИТЬ
+
+binding-steer-left=Поворот налево
+binding-steer-right=Поворот направо
+binding-gas=Газ
+binding-brake=Тормоз
+binding-handbrake=Ручной тормоз
+binding-paddle-gear=Подрулевые переключатели
+binding-shifter-gear=Рычаг переключения передач
+binding-light-cycle=Переключение света
+binding-light-direct=Уровень света
+binding-flashing-lights=Мигающие фары
+binding-rain-lights=Дождевые фары
+binding-direction-light-left=Левый указатель поворота
+binding-direction-light-right=Правый указатель поворота
+binding-warning-lights=Аварийные огни
+binding-retractable-head-lights-toggle=Включить/выключить фары
+binding-traction-control-cycle=Переключение системы контроля тяги
+binding-traction-control-direct=Система контроля тяги
+binding-traction-control-cut-cycle=Переключение отключения контроля тяги
+binding-traction-control-cut-direct=Отключение контроля тяги
+binding-a-b-s-cycle=Переключение ABS
+binding-a-b-s-direct=Уровень ABS
+binding-engine-map-cycle=Переключение режима двигателя
+binding-engine-map-direct=Уровень режима двигателя
+binding-display-device-cycle=Переключение устройства отображения
+binding-display-device-direct=Устройство отображения
+binding-display-page-cycle=Переключение страницы дисплея
+binding-display-page-direct=Страница дисплея
+binding-cockpit-light-cycle=Переключение освещения кабины
+binding-cockpit-light-direct=Освещение кабины
+binding-special-light-cycle=Переключение специального света
+binding-special-light-direct=Уровень специального света
+binding-wipers-cycle=Переключение дворников
+binding-wipers-direct=Режим дворников
+binding-drone-toggle=Переключение дрона
+binding-drivable=Управляемое
+binding-on-board-free=Свободный вид из кабины
+binding-free=Свободный вид
+binding-track=Вид на трассу
+binding-helicopter=Вид с вертолета
+binding-sequence=Последовательность
+binding-onboard=Вид из кабины
+binding-pan-up=Вверх
+binding-pan-up-slow=Вверх (медленно)
+binding-pan-up-fast=Вверх (быстро)
+binding-pan-down=Вниз
+binding-pan-down-slow=Вниз (медленно)
+binding-pan-down-fast=Вниз (быстро)
+binding-pan-left=Влево
+binding-pan-left-slow=Влево (медленно)
+binding-pan-left-fast=Влево (быстро)
+binding-pan-right=Вправо
+binding-pan-right-slow=Вправо (медленно)
+binding-pan-right-fast=Вправо (быстро)
+binding-forward=Вперед
+binding-forward-slow=Вперед (медленно)
+binding-forward-fast=Вперед (быстро)
+binding-backward=Назад
+binding-backward-slow=Назад (медленно)
+binding-backward-fast=Назад (быстро)
+binding-pitch-up=Угол наклона вверх
+binding-pitch-up-slow=Угол наклона вверх (медленно)
+binding-pitch-up-fast=Угол наклона вверх (быстро)
+binding-pitch-down=Угол наклона вниз
+binding-pitch-down-slow=Угол наклона вниз (медленно)
+binding-pitch-down-fast=Угол наклона вниз (быстро)
+binding-yaw-left=Поворот влево
+binding-yaw-left-slow=Поворот влево (медленно)
+binding-yaw-left-fast=Поворот влево (быстро)
+binding-yaw-right=Поворот вправо
+binding-yaw-right-slow=Поворот вправо (медленно)
+binding-yaw-right-fast=Поворот вправо (быстро)
+binding-roll-left=Крен влево
+binding-roll-left-slow=Крен влево (медленно)
+binding-roll-left-fast=Крен влево (быстро)
+binding-roll-right=Крен вправо
+binding-roll-right-slow=Крен вправо (медленно)
+binding-roll-right-fast=Крен вправо (быстро)
+binding-reset-view=Сбросить вид
+binding-cancel-reset-view=Отмена сброса вида
+binding-select-next-car=Выбрать следующий автомобиль
+binding-select-prev-car=Выбрать предыдущий автомобиль
+binding-select-player-car=Выбрать автомобиль игрока
+binding-left=Лево
+binding-up=Вверх
+binding-right=Право
+binding-down=Вниз
+binding-page-up=Страница вверх
+binding-page-down=Страница вниз
+binding-confirm=Подтвердить
+binding-cancel=Отмена / Назад
+binding-menu=Меню
+binding-steer=Рулевое управление
+binding-clutch=Сцепление
+binding-pan-y-up=Вверх
+binding-pan-y-down=Вниз
+binding-pan-y=Перемещение (вверх/вниз)
+binding-pan-x-left=Влево
+binding-pan-x-right=Вправо
+binding-pan-x=Перемещение (влево/вправо)
+binding-pan-z-forward=Вперед
+binding-pan-z-backward=Назад
+binding-pan-z=Перемещение (вперед/назад)
+binding-pitch=Наклон
+binding-yaw=Поворот
+binding-roll=Крен
+binding-showroom-rotate-car=Поворот автомобиля в шоуруме
+binding-showroom-internal-view=Переключить камеру в шоуруме
+binding-mirrors-cycle=Переключение зеркал
+binding-mirrors-pitch=Угол наклона зеркал
+binding-mirrors-yaw=Поворот зеркал
+binding-mirrors-fov=Поле зрения зеркал
+binding-shifter-gear-reverse=Режим задней передачи
+binding-optional-animation=Дополнительная анимация
+binding-look-left=Посмотреть влево
+binding-look-right=Посмотреть вправо
+binding-look-behind=Посмотреть назад
+binding-hood=Капот
+binding-tailgate=Багажник
+binding-door-f-l=Передняя левая дверь
+binding-door-f-r=Передняя правая дверь
+binding-door-r-l=Задняя левая дверь
+binding-door-r-r=Задняя правая дверь
+binding-pedal-accelerator=Педаль газа
+binding-pedal-brake=Педаль тормоза
+binding-pedal-clutch=Педаль сцепления
+binding-gear-shift-up=Переключение вверх
+binding-gear-shift-down=Переключение вниз
+binding-hand-brake=Ручной тормоз
+binding-show-poi=Взаимодействие с объектом
+binding-ignition-toggle=Переключение зажигания
+binding-starter=Стартер
+binding-zoom-toggle=Переключение приближения
+binding-paddle-gear1=Подрулевое переключение вверх
+binding-paddle-gear2=Подрулевое переключение вниз
+binding-pit-limiter=Ограничитель пит-лейна
+binding-e-s-c-cycle=Переключение ESC
+binding-e-s-c-direct=ESC
+binding-performance-mode-cycle=Переключение режима производительности
+binding-performance-mode-direct=Режим производительности
+
+binding-traction-control-cycle1=Уменьшить настройку контроля тяги
+binding-traction-control-cycle2=Увеличить настройку контроля тяги
+binding-a-b-s-cycle1=Уменьшить настройку ABS
+binding-a-b-s-cycle2=Увеличить настройку ABS
+binding-engine-map-cycle1=Уменьшить настройку карты двигателя
+binding-engine-map-cycle2=Увеличить настройку карты двигателя
+binding-e-s-c-cycle1=Уменьшить настройку ESC
+binding-e-s-c-cycle2=Увеличить настройку ESC
+binding-performance-mode-cycle1=Предыдущий режим производительности
+binding-performance-mode-cycle2=Следующий режим производительности
+binding-brake-bias-cycle1=Смещение тормозов назад
+binding-brake-bias-cycle2=Смещение тормозов вперед
+
+btnShiftButtons=Модификаторы
+
+btnProperties=Свойства
+btnSettings=Настройки
+btnTrackIR=TrackIR
+
+keyComma=,
+keyPeriod=.
+keyPageUp=Стр. Вверх
+keyPageDown=Стр. Вниз
+keyLeftArrow=Стрелка влево
+keyRightArrow=Стрелка вправо
+keyUpArrow=Стрелка вверх
+keyDownArrow=Стрелка вниз
+keyEnter=Enter
+keyEscape=Esc
+keySpace=Пробел
+keyBackspace=Backspace
+
+keyRightBracket=]
+keyLeftBracket=[
+keySlash=/
+keyEqual==
+keyMinus=-
+keySemiColon=;
+keyQuote='
+keyBackslash=\
+keyShift=Shift
+keyControl=Ctrl
+keyAlt=Alt
+
+keyF1=F1
+keyF2=F2
+keyF7=F7
+
+buttonPOVLeft=POV {0} Влево
+buttonPOVRight=POV {0} Вправо
+buttonPOVUp=POV {0} Вверх
+buttonPOVDown=POV {0} Вниз
+
+
+lblClearBinding=Очистить привязку
+msgClearBindingFor=Это очистит текущую привязку для:
+
+msgAssignBindingFor=Это назначит управление для:
+
+lblMoveAxis=Двигайте ось
+lblPressButton=Нажмите кнопку
+
+btnClearBinding=ОЧИСТИТЬ ПРИВЯЗКУ
+btnRebind=ПЕРЕНАЗНАЧИТЬ
+lblPressEscToCancel=Нажмите ESC для отмены
+
+btnOnPress=При нажатии
+btnOnRelease=При отпускании
+btnOnHold=При удерживании
+btnConstant=Постоянно
+btnRepeatOnHold=Повтор при удерживании
+btnAddModifier=Добавить модификатор
+
+btnRequiresShift=Требуется модификатор
+btnIsInverted=Инвертировать ось
+btnIsSlider=Слайдер
+
+lblTriggerOn=Активировать на
+lblTriggerAfter=Активировать после
+lblTriggerEvery=Активировать каждые
+
+controlsCurvature=Кривизна
+controlsDamperGain=Усиление демпфера
+controlsDeadzone=Мертвая зона
+controlsDynamicDamping=Динамическое демпфирование
+controlsFfbGain=Усиление обратной связи
+controlsGamepadVibrations=Вибрация геймпада
+controlsLimitOversteer=Ограничение избыточной поворачиваемости
+controlsMinDamper=Минимальное демпфирование
+controlsMinimumFfb=Минимальная обратная связь
+controlsRoadEffects=Эффекты дороги
+controlsSaturationX=Насыщенность по оси X
+controlsSaturationY=Насыщенность по оси Y
+controlsSpeedSensitivity=Чувствительность к скорости
+controlsSteerAssistWeight=Вес помощи в рулении
+controlsSteerFilter=Фильтр рулевого управления
+controlsSteerLock=Замок рулевого управления
+controlsTrueForceGain=Усиление TrueForce
+
+lblAllowedModifiers=Разрешенные модификаторы
+msgAlreadyBoundAxis=Эта ось уже привязана к
+msgAlreadyBoundButton=Эта кнопка уже привязана к
+
+lblAxisAlreadyAssigned=Дублирование оси
+lblButtonAlreadyAssigned=Дублирование кнопки
+lblPressAgainToAdd=Нажмите еще раз для привязки или выберите другую кнопку
+lblMoveAgainToAdd=Двигайте ось еще раз для привязки или выберите другую ось
+
+lblActiveControls=Текущие активные устройства
+
+lblSearchByAction=Поиск по названию действия
+
+lblNone=Нет
+
+lblPracticeDuration=Длительность тренировки
+lblPracticeStartTime=Время начала тренировки
+lblQualifyingDuration=Длительность квалификации
+lblQualifyingStartTime=Время начала квалификации
+
+lblWarmupDuration=Длительность разминки
+lblWarmupStartTime=Время начала разминки
+
+lblQualifyingDuration=Длительность квалификации
+lblQualifyingStartTime=Время начала квалификации
+
+lblRaceType=Тип гонки
+lblRaceDuration=Длительность гонки
+lblRaceStartTime=Время начала гонки
+lblRaceStartingPosition=Стартовая позиция
+lblRaceTimeMultiplier=Множитель времени гонки
+lblWarmupTimeMultiplier=Множитель времени разминки
+lblQualiTimeMultiplier=Множитель времени квалификации
+lblPracticeTimeMultiplier=Множитель времени тренировки
+
+lblGridType=Тип решетки
+lblOpponentsUpper=СОПЕРНИКИ
+lblOpponents=Соперники
+lblSkillUpper=УРОВЕНЬ УМЕНИЙ
+lblNumberOfOpponents=Количество соперников
+lblOpponentSkill=Умения соперников
+lblOpponentConsistency=Стабильность соперников
+lblOpponentAggressiveness=Агрессивность соперников
+
+labelAcademyWeather=Погода:
+labelAcademyTrackStatus=Состояние трассы
+
+da_caption_sp-01=ВАШ ПЕРВЫЙ ПОВОРОТ
+da_caption_sp-02=ПОВОРОТЫ В ФОРМЕ "L"
+da_caption_sp-03=ЭЛЕКТРОКАР, БЫСТРЫЙ ПОВОРОТ
+da_caption_sp-04=ЗАДНИЙ ПРИВОД
+da_caption_sp-05=ПОКАЖИТЕ НАМ КРУГ
+da_caption_sc-01=ИТАЛЬЯНСКИЕ ШИКАНЫ
+da_caption_sc-02=ВАША ПЕРВАЯ ВЛАЖНАЯ ТРАССА
+da_caption_sc-03="АКВА МИНЕРАЛИ"
+da_caption_sc-04=РЕЗКО ТОРМОЗИТЕ, РЕЗКО ВЫХОДИТЕ
+da_caption_sc-05=ПОКАЖИТЕ НАМ КРУГ
+da_caption_hc-01=СЫРАЯ ТРАССА, МОЩНЫЙ АВТО
+da_caption_hc-02=ОСВОЕНИЕ ПОВОРОТОВ "L"
+da_caption_hc-03=ДОБРО ПОЖАЛОВАТЬ В "КОРКОВЫЙ ШУРУП"
+da_caption_hc-04=ПОГРУЗИТЕСЬ ГЛУБОКО
+da_caption_hc-05=ПОКАЖИТЕ НАМ КРУГ
+da_caption_r1-01=СУЗУКА, ДОЖДЬ И "ЗМЕЯ"
+da_caption_r1-02=ДОБЕРИТЕСЬ ДО ПОВОРОТА
+da_caption_r1-03=ЗНАКОМСТВО С "ЛОЖКОЙ"
+da_caption_r1-04=БУДЬТЕ СМЕЛЫМИ, ДОБРО ПОЖАЛОВАТЬ НА "130R"
+da_caption_r1-05=ПОКАЖИТЕ НАМ КРУГ
+da_caption_r2-01=ДОБРО ПОЖАЛОВАТЬ В АВСТРАЛИЮ
+da_caption_r2-02=ПОЕЗДКА ВВЕРХ ПО СКЛОНУ
+da_caption_r2-03=И ВНИЗ, МЕЖДУ СТЕНАМИ
+da_caption_r2-04=САМАЯ БЫСТРАЯ ПРЯМОЙКА И ПОВОРОТ
+da_caption_r2-05=ПОКАЖИТЕ НАМ КРУГ
+da_caption_r3-01=ОСВОЙТЕ BRANDS HATCH
+da_caption_r3-02=ОСВОЙТЕ IMOLA
+da_caption_r3-03=ОСВОЙТЕ LAGUNA SECA
+da_caption_r3-04=ОСВОЙТЕ SUZUKA
+da_caption_r3-05=ОСВОЙТЕ MOUNT PANORAMA
+
+
+lblMinutesLower=минуты
+lblMinuteLower=минута
+lblLapsLower=круги
+lblLapLower=круг
+
+lblGridType=ТИП СТАРТОВОЙ РЕШЕТКИ
+lblAutomatic=АВТОМАТИЧЕСКИЙ
+lblEditGrid=РЕДАКТИРОВАТЬ СТАРТОВУЮ РЕШЕТКУ
+
+lblWeatherMode=ПОГОДА
+lblDynamic=ДИНАМИЧЕСКАЯ
+lblStatic=СТАТИЧЕСКАЯ
+
+lblClassWeights=ВЕС КЛАССОВ
+lblGenerateGrid=СГЕНЕРИРОВАТЬ РЕШЕТКУ
+lblSingleMake=ОДИН ПРОИЗВОДИТЕЛЬ
+
+lblConfiguration=КОНФИГУРАЦИЯ
+lblTrim=КОМПЛЕКТАЦИЯ
+
+msgCannotPurchaseVehicle=Вы не можете купить этот автомобиль в данный момент.
+msgWrongCarSelected=Выбран неправильный автомобиль для данного сервера.
+msgServerFull=Сервер заполнен.
+msgInvalidPassword=Неверный пароль.
+msgServerClosed=Сервер закрыт.
+msgRequirementsNotMet=Требования сервера не выполнены.
+msgCouldNotLoadEvent=Не удалось загрузить специальное событие.
+
+lblAppearance=ВНЕШНИЙ ВИД
+lblWaitTime=МАКСИМАЛЬНОЕ ВРЕМЯ ОЖИДАНИЯ
+lblWaitPitBox=ОЖИДАНИЕ В БОКСЕ
+labelWaitingForLastLap=ОЖИДАНИЕ ПОСЛЕДНЕГО КРУГА
+
+lblSetupPresets=НАСТРОЙКИ ПРЕСЕТОВ
+lblSetupTyres=ШИНЫ
+lblSetupElectronics=ЭЛЕКТРОНИКА
+lblSetupFuelStrategy=ТОПЛИВО И СТРАТЕГИЯ
+lblSuspension=ПОДВЕСКА
+lblSetupDampers=АМОРТИЗАТОРЫ
+lblSetupAero=АЭРОДИНАМИКА
+
+headerDrivingAcademy=Академия вождения
+
+UILicenseType_None=Нет
+UILicenseType_Entry=Начальная
+UILicenseType_SportsCar=Спортивный автомобиль
+UILicenseType_SuperCar=Суперкар
+UILicenseType_HyperCar=Гиперкар
+UILicenseType_Racing_1=Гоночная 1
+UILicenseType_Racing_2=Гоночная 2
+UILicenseType_Racing_3=Гоночная 3
+
+labelSetup-compound_FL=Передний состав
+labelSetup-compound_RL=Задний состав
+labelSetup-pressure=Давление
+labelSetup-omi=OMI
+labelSetup-tyre_wear=Износ шин
+labelSetup-pad_wear=Износ тормозных колодок
+labelSetup-disc_wear=Износ дисков
+
+labelSetup-toe=Схождение
+labelSetup-camber=Развал
+labelSetup-caster=Кастер
+
+labelSetup-bump_stop_uprate=Жесткость отбойника
+labelSetup-bump_stop_uprange=Диапазон отбойника
+
+
+labelLastReadings=ПОСЛЕДНИЕ ПОКАЗАТЕЛИ
+labelFrontLeft=ПЕРЕДНИЙ ЛЕВЫЙ
+labelRearLeft=ЗАДНИЙ ЛЕВЫЙ
+labelFrontRight=ПЕРЕДНИЙ ПРАВЫЙ
+labelRearRight=ЗАДНИЙ ПРАВЫЙ
+
+labelSetup-tc=Контроль тяги (TC)
+labelSetup-tc2=Контроль тяги (TC2)
+labelSetup-abs=ABS
+labelSetup-ecu=Карта двигателя (ECU)
+labelSetup-telemetry_laps=Круги телеметрии
+
+labelSetup-fuel=Топливо
+labelSetup-tyre_type=Тип шин
+labelSetup-pistop_lap=Пит-стоп на круге
+labelSetup-refuel=Заправка
+labelSetup-tyreset_change=Замена комплекта шин
+labelSetup-repairs=Ремонт в боксе
+
+labelSetup-arbs0=Передний стабилизатор
+labelSetup-arbs1=Задний стабилизатор
+labelSetup-brake_power=Мощность тормозов
+labelSetup-brake_bias=Смещение тормозов
+labelSetup-steer_ratio=Передаточное отношение руля
+labelFront=ПЕРЕД
+labelSetup-spring_rate=Жесткость пружин
+labelSetup-bumpstop_rate=Жесткость отбойников
+labelSetup-bumpstop_range=Диапазон отбойников
+labelSetup-antiroll_rear=Задний стабилизатор
+labelSetup-diff_preload=Преднатяжение дифференциала
+labelRear=ЗАД
+
+labelSetup-slow_bump=Медленный отбой
+labelSetup-slow_rebound=Медленный отскок
+labelSetup-fast_bump=Быстрый отбой
+labelSetup-fast_rebound=Быстрый отскок
+
+labelSetup-front_target_height=Высота передней оси
+labelSetup-rear_target_height=Высота задней оси
+labelSetup-splitter_angle=Угол сплиттера
+labelSetup-brake_duct=Воздуховоды тормозов
+
+
+headerSetupPresets=Пресеты настроек автомобиля
+lblDrivingLicenses=ЛИЦЕНЗИИ
+lblDrivingLicensesLower=Лицензии
+
+lblDrivingLicenseCategories=КАТЕГОРИИ ЛИЦЕНЗИЙ
+textDrivingAcademyDescription=Откройте все события категории, чтобы разблокировать следующие.
+
+lblTrackConditionsParameters=УСЛОВИЯ ТРАССЫ — ГИД ПО ПАРАМЕТРАМ
+
+lblTrackOptimum=ОПТИМАЛЬНЫЕ
+lblTrackGreen=ЗЕЛЕНЫЕ
+lblTrackMedium=СРЕДНИЕ
+lblTrackDamp=ВЛАЖНЫЕ
+lblTrackWet=МОКРЫЕ
+
+
+CarAnimationType_Hood=Капот
+CarAnimationType_Door_FL=Передняя левая дверь
+CarAnimationType_Door_FR=Передняя правая дверь
+CarAnimationType_Door_RL=Задняя левая дверь
+CarAnimationType_Door_RR=Задняя правая дверь
+CarAnimationType_Pedal_Accelerator=Педаль газа
+CarAnimationType_Pedal_Brake=Педаль тормоза
+CarAnimationType_Pedal_Clutch=Педаль сцепления
+CarAnimationType_Gear_Shift_Up=Переключение вверх
+CarAnimationType_Gear_Shift_Down=Переключение вниз
+CarAnimationType_Hand_Brake=Ручной тормоз
+CarAnimationType_Tailgate=Багажник
+
+lblWiperStage=Дворники
+lblMainLightStage=Главные фары
+lblSpecialLightStage=Специальное освещение
+lblCockpitLightStage=Освещение кабины
+
+lblSteeringAngle=Угол поворота руля
+
+lblWarnLights=Аварийные огни
+lblHeadlights=Фары
+lblFlashLights=Мигание фарами
+lblRainLights=Дождевые огни
+lblBraking=Торможение
+lblReverse=Задний ход
+lblPitLimiter=Ограничитель пит-лейна
+lblPitstopTimer=Таймер пит-стопа
+
+SeatVisibility_AllVisible=ВСЕ ВИДИМО
+SeatVisibility_HideDriver=СКРЫТЬ ВОДИТЕЛЯ
+SeatVisibility_LockSteeringWheel=ЗАФИКСИРОВАТЬ РУЛЬ
+SeatVisibility_HideSteeringWheel=СКРЫТЬ РУЛЬ
+lblViewSettingsDisableMirror=ОТКЛЮЧИТЬ ЗЕРКАЛО
+lblheaderViewSettings=Настройки вида
+lblViewSettingsSeatHeight=ВЫСОТА
+lblViewSettingsSeatLateral=СМЕЩЕНИЕ
+lblViewSettingsSeatDistance=ДИСТАНЦИЯ
+lblViewSettingsFOV=ПОЛЕ ЗРЕНИЯ (FOV)
+lblViewSettingsSeatPitch=УГОЛ НАКЛОНА
+viewSettingsCamera=КАМЕРА
+viewSettingsWheel=РУЛЬ И ПАНЕЛЬ
+lblViewSettingsHideDriver=СКРЫТЬ ВОДИТЕЛЯ
+lblViewSettingsLockWheel=ЗАФИКСИРОВАТЬ РУЛЬ
+lblViewSettingsHideWheel=СКРЫТЬ РУЛЬ
+
+Animation_CarAnimationType_Hood=Капот
+Animation_CarAnimationType_Door_FL=Передняя левая дверь
+Animation_CarAnimationType_Door_FR=Передняя правая дверь
+Animation_CarAnimationType_Door_RL=Задняя левая дверь
+Animation_CarAnimationType_Door_RR=Задняя правая дверь
+Animation_CarAnimationType_Pedal_Accelerator=Педаль газа
+Animation_CarAnimationType_Pedal_Brake=Педаль тормоза
+Animation_CarAnimationType_Gear_Shift_Up=Переключение вверх
+Animation_CarAnimationType_Gear_Shift_Down=Переключение вниз
+Animation_CarAnimationType_Tailgate=Багажник
+Animation_CarAnimationType_Pedal_Clutch=Педаль сцепления
+Animation_CarAnimationType_Hand_Brake=Ручной тормоз
+
+labelFinished=ЗАВЕРШЕНО
+labelWaitingForPlayers=ОЖИДАНИЕ ИГРОКОВ
+labelWaitingForLeader=ОЖИДАНИЕ ЛИДЕРА
+labelWaitingForOthers=ОЖИДАНИЕ ОСТАЛЬНЫХ
+
+msgGameUpdateRequired=Для использования этой функции требуется обновление игры
+
+lblReplayUpper=ПОВТОР
+lblPhotographsUpper=ФОТОГРАФИИ
+
+lblSessions=СЕССИИ
+btnResume=ВОЗОБНОВИТЬ
+btnDefault=ПО УМОЛЧАНИЮ
+btnReturnPitlane=ВЕРНУТЬСЯ В ПИТ-ЛЕЙН
+btnReturnToMainMenu=ВЕРНУТЬСЯ В ГЛАВНОЕ МЕНЮ
+
+lblXPReceived=ОЧКИ ОПЫТА ПОЛУЧЕНЫ
+lblCreditsReceived=КРЕДИТЫ ПОЛУЧЕНЫ
+lblRentalDone=АРЕНДА ЗАВЕРШЕНА
+lblPenaltyReceived=ПОЛУЧЕНО НАКАЗАНИЕ
+lblPenaltyCleared=НАКАЗАНИЕ СНЯТО
+lblWarningReceived=ПРЕДУПРЕЖДЕНИЕ
+lblCarNumber=№ АВТО
+
+lblElectricsUpper=ЭЛЕКТРИКА
+lblAnimationsUpper=АНИМАЦИИ
+lblDirectionLights=УКАЗАТЕЛИ ПОВОРОТОВ
+lblIgnitionUpper=ЗАЖИГАНИЕ
+lblStartUpper=СТАРТ
+lblResetUpper=СБРОС
+lblPleaseSelectTrack=ВЫБЕРИТЕ ТРАССУ
+lblAvailableShowrooms=Доступные шоурумы
+lblAvailableWeatherPresets=Доступные настройки погоды
+lblAvailableHDRIPresets=Доступные HDRI пресеты
+
+InvestigationType_Racecar_Cut=Выезд за пределы трассы
+InvestigationType_Collision=Столкновение
+InvestigationType_Illegal_Overtake=Незаконный обгон
+InvestigationType_Pit_Speeding=Превышение скорости в пит-лейне
+InvestigationType_Pit_Entry=Вход в пит-лейн
+InvestigationType_Pit_Exit=Выход из пит-лейна
+InvestigationType_Ignored_Mandatory_Pit=Пропуск обязательного пит-стопа
+InvestigationType_Unsafe_Rejoin=Опасное возвращение на трассу
+InvestigationType_Race_Control=Контроль гонки
+InvestigationType_Reverse_In_Pitlane=Движение задним ходом в пит-лейне
+InvestigationType_Wrong_Way=Движение в неправильном направлении
+InvestigationType_Ignored_Driver_Stint=Пропуск смены водителя
+InvestigationType_Exceeded_Driver_Stint_Limit=Превышен лимит смены водителя
+InvestigationType_Driver_Ran_No_Stint=Водитель не совершил смену
+InvestigationType_Damaged_Car=Поврежденный автомобиль
+InvestigationType_Lights_Off=Фары выключены
+InvestigationType_Speeding_On_Start=Превышение скорости на старте
+InvestigationType_Wrong_Position_On_Start=Неправильная позиция на старте
+InvestigationType_Speeding=Превышение скорости
+InvestigationType_Cleaning_Penalties=Снятие штрафов
+
+PenaltyType_Warning=Предупреждение
+PenaltyType_Reprimand=Выговор
+PenaltyType_Fine=Штраф
+PenaltyType_Remove_Best_Laptime=Удалить лучшее время круга
+PenaltyType_Drop_Of_Grid_Position=Потеря позиций на старте
+PenaltyType_Start_From_Pitlane=Старт из пит-лейна
+PenaltyType_Time_Penalty_Seconds=Штраф времени (в секундах)
+PenaltyType_Penalty_Laps=Штрафные круги
+PenaltyType_Drop_Of_Place_In_Classification=Потеря места в классификации
+PenaltyType_Drive_Through=Проезд через пит-лейн
+PenaltyType_Stop_And_Go=Остановка и продолжение
+PenaltyType_Disqualification=Дисквалификация
+
+
+lblEnabledUpper=ВКЛЮЧЕНО
+lblSegmentUpper=СЕГМЕНТ
+
+lblResetScene=Сбросить сцену
+lblSaveScene=Сохранить сцену и положение камеры
+msgAreYouSureResetScene=Вы уверены, что хотите сбросить эту сцену?
+msgAreYouSureSaveScene=Вы уверены, что хотите сохранить текущую сцену?
+
+lblPurchaseVehicle=Купить автомобиль
+msgAreYouSurePurchaseVehicle=Вы уверены, что хотите купить этот автомобиль?
+lblRentingVehicle=Аренда автомобиля
+msgAreYouSureRentingVehicle=Стоимость аренды будет зарезервирована и списана, как только вы начнете сессию вождения. Подтверждаете аренду?
+lblVariantsAvailable=ДОСТУПНЫЕ ВЕРСИИ
+
+DRIVEN_KM=ПРОЙДЕНО КМ
+CONSUMED_FUEL=ПОТРЕБЛЕНО ТОПЛИВА
+CC_INC=УЛУЧШЕНИЕ УПРАВЛЕНИЯ АВТОМОБИЛЕМ
+TC_INC=УЛУЧШЕНИЕ КОМПЕТЕНЦИИ ТРАССЫ
+SA_INC=УЛУЧШЕНИЕ РЕЙТИНГА БЕЗОПАСНОСТИ
+CLEAN_LAP=ЧИСТЫЕ КРУГИ
+ADDITIONAL_CLEAN_LAP=РЕКОРД ПОСЛЕДОВАТЕЛЬНЫХ ЧИСТЫХ КРУГОВ
+NO_INC_LAP=КРУГИ БЕЗ ИНЦИДЕНТОВ
+ADDITIONAL_NO_INC_LAP=РЕКОРД ПОСЛЕДОВАТЕЛЬНЫХ БЕЗОПАСНЫХ КРУГОВ
+TA_SESS_COMPLETED=ЗАВЕРШЕНА СЕССИЯ
+IR_SESS_COMPLETED=ЗАВЕРШЕНА ГОНКА
+EVENT_COMPLETED=ЗАВЕРШЕНО СОБЫТИЕ
+SEASON_COMPLETED=ЗАВЕРШЕН СЕЗОН
+SPECIAL_EVENT_COMPLETED=УЧАСТИЕ В СПЕЦИАЛЬНОМ СОБЫТИИ
+RACE_WIN=ПОБЕДА В ГОНКЕ
+QUALY_WIN=ПОЛУЧЕНО ПОУЛ-ПОЗИЦИЯ
+PRACTICE_WIN=ПОБЕДА В ТРЕНИРОВКЕ
+EVENT_WIN=ПОБЕДА В СОБЫТИИ
+NEW_PB_TRACK_CAR=УЛУЧШЕНО ЛУЧШЕЕ ВРЕМЯ КРУГА
+TOP_3_RACE=ТОП-3 В ГОНКЕ
+TOP_3_QUALY=ТОП-3 В КВАЛИФИКАЦИИ
+TOP_3_PRACTICE=ТОП-3 В ТРЕНИРОВКЕ
+TOP_3_EVENT=ТОП-3 В СОБЫТИИ
+TOP_5_RACE=ТОП-5 В ГОНКЕ
+TOP_5_QUALY=ТОП-5 В КВАЛИФИКАЦИИ
+TOP_5_PRACTICE=ТОП-5 В ТРЕНИРОВКЕ
+TOP_5_EVENT=ТОП-5 В СОБЫТИИ
+TOP_10_RACE=ТОП-10 В ГОНКЕ
+TOP_10_QUALY=ТОП-10 В КВАЛИФИКАЦИИ
+TOP_10_PRACTICE=ТОП-10 В ТРЕНИРОВКЕ
+TOP_10_EVENT=ТОП-10 В СОБЫТИИ
+BEST_LAP=ЛУЧШИЙ КРУГ
+NEW_RANK=НОВЫЙ РАНГ
+CREDITS_EARNED=ЗАРАБОТАНО КРЕДИТОВ
+
+mainMenuTimetable=РАСПИСАНИЕ
+
+DriverVisibility_AllVisible=ВСЕ ВИДИМЫ
+DriverVisibility_HideDriver=СКРЫТЬ ВОДИТЕЛЯ
+DriverVisibility_HideSteeringWheel=СКРЫТЬ РУЛЬ
+DriverVisibility_LockSteeringWheel=ЗАФИКСИРОВАТЬ РУЛЬ
+lblViewSettingsBezelWidth=ШИРИНА РАМКИ
+lblViewSettingsDashboardDisplayInHUD=ПАНЕЛЬ В ОТДЕЛЬНОМ ВИДЕ
+lblViewSettingsDashboardDisplayOpacity=ПРОЗРАЧНОСТЬ ДИСПЛЕЯ
+lblViewSettingsDashcamFactor=ПАРАМЕТР ВИДА ОТ КАМЕРЫ
+lblViewSettingsBonnetFactor=ПАРАМЕТР КАПОТА
+lblViewSettingsDistanceFromScreens=ДИСТАНЦИЯ ДО ЭКРАНОВ
+lblViewSettingsHDRContrast=КОНТРАСТ HDR
+lblViewSettingsHDRExposure=ЭКСПОЗИЦИЯ HDR
+lblViewSettingsLockToHorizon=ФИКСАЦИЯ НА ГОРИЗОНТЕ
+lblViewSettingsLookWithWheel=СЛЕДОВАНИЕ ЗА РУЛЕМ
+lblViewSettingsLWWGamma=ГАММА СЛЕДОВАНИЯ ЗА РУЛЕМ
+lblViewSettingsLWWSmooth=ПЛАВНОСТЬ СЛЕДОВАНИЯ
+lblViewSettingsMirrorFOV=ПОЛЕ ЗРЕНИЯ ЗЕРКАЛА
+lblViewSettingsMode=РЕЖИМ
+lblViewSettingsMovement=ДВИЖЕНИЕ
+lblViewSettingsProjectionCorrection=КОРРЕКЦИЯ ПРОЕКЦИИ
+lblViewSettingsScreenWidth=ШИРИНА ЭКРАНА
+lblViewSettingsSideScreenAngle=УГОЛ БОКОВОГО ЭКРАНА
+lblViewSettingsVisibility=ВИДИМОСТЬ
+lblViewSettingsVMHorizontalOffset=ГОРИЗОНТАЛЬНОЕ СМЕЩЕНИЕ
+lblViewSettingsVMScale=МАСШТАБ ВИРТУАЛЬНОГО ЗЕРКАЛА
+lblViewSettingsVMVerticalOffset=ВЕРТИКАЛЬНОЕ СМЕЩЕНИЕ
+viewSettingsHDR=HDR
+viewSettingsMirrors=ЗЕРКАЛА
+viewSettingsMotion=ДВИЖЕНИЕ
+viewSettingsTriple=ТРЕХЭКРАННЫЙ РЕЖИМ
+mainMenuViewSettings=НАСТРОЙКИ ВИДА
+
+lblFlagFullCourse=ПОЛНАЯ ТРАССА
+
+headerGameplayPresets=Пресеты игрового процесса
+labelMonitor=Монитор
+labelAspectRatio=Соотношение сторон
+gameplayPlaceholder=Заполнитель
+
+viewSettingsMirrorCenter=ЦЕНТР
+viewSettingsMirrorLeft=ЛЕВО
+viewSettingsMirrorRight=ПРАВО
+
+
+ClientCommandsResponse_NO_TRACKS=Трассы отсутствуют.
+ClientCommandsResponse_NO_SEASONDEFINITION=Сезон не определен.
+ClientCommandsResponse_NO_SETTINGS=Настройки отсутствуют.
+ClientCommandsResponse_EVENT_WRONG=Неверный тип события.
+ClientCommandsResponse_SESSION_WRONG=Неверный тип сессии.
+ClientCommandsResponse_NO_CAR_DESIGN=Отсутствует дизайн автомобиля.
+ClientCommandsResponse_NO_CAR_CONFIG=Отсутствует конфигурация автомобиля.
+ClientCommandsResponse_NO_AVAILABLE_CARS=Нет доступных автомобилей.
+ClientCommandsResponse_BACKENDDISCONNECTED=Отключение от сервера.
+ClientCommandsResponse_NOUSER=Пользователь не найден.
+ClientCommandsResponse_MESSAGE_IN_PROGRESS=Сообщение в процессе.
+ClientCommandsResponse_PARAMETER_ERROR=Ошибка параметра.
+ClientCommandsResponse_CRITICAL_ERROR=Критическая ошибка.
+
+labelTimeOfDay=ВРЕМЯ СУТОК
+labelDuration=ДЛИТЕЛЬНОСТЬ
+
+msgErrorUnsupportedGameMode=Этот игровой режим не поддерживается.
+msgErrorInvalidGameModeParameters=Неверные параметры игрового режима. Пожалуйста, перезапустите игру. Если сообщение повторяется, удалите содержимое папки gamemodes.
+
+labelNoValidLaps=НЕТ ДЕЙСТВИТЕЛЬНЫХ ВРЕМЕН КРУГА
+labelFailedLicense=НЕ УДАЛОСЬ
+labelGoldTimeAcademy=ЗОЛОТОЕ ВРЕМЯ
+labelSilverTimeAcademy=СЕРЕБРЯНОЕ ВРЕМЯ
+labelBronzeTimeAcademy=БРОНЗОВОЕ ВРЕМЯ
+labelMyTimeAcademy=Ваш лучший результат:
+labelTrackStatus=СОСТОЯНИЕ ТРАССЫ
+labelGoldTimeAcademy=ЗОЛОТОЕ ВРЕМЯ
+labelSilverTimeAcademy=СЕРЕБРЯНОЕ ВРЕМЯ
+labelBronzeTimeAcademy=БРОНЗОВОЕ ВРЕМЯ
+labelWaitingForAIControl=УПРАВЛЕНИЕ AI ЧЕРЕЗ
+labelLayout=РАЗМЕТКА
+
+lbldrivingAcademyRetry=ПОВТОРИТЬ
+
+lblTipsUpper=СОВЕТЫ:
+
+lblPressToContinue=НАЖМИТЕ {MENU/tooltip}, ЧТОБЫ ЗАКОНЧИТЬ СЕССИЮ
+lblAutoSwitchCamera=АВТОМАТИЧЕСКОЕ ПЕРЕКЛЮЧЕНИЕ ВИДА
+connection_TRYING_RECONNECTION={ИГРА ОФФЛАЙН/статус оффлайн} ПЫТАЕМСЯ ПОДКЛЮЧИТЬСЯ
+connection_RECONNECTED={ИГРА ОНЛАЙН/статус онлайн} ПОДКЛЮЧЕНИЕ ВОССТАНОВЛЕНО
+
+lblExterior=Экстерьер
+lblInterior=Интерьер
+lblWheels=Колеса
+lblParts=Запчасти
+lblMode=Режим
+lblOEM=OEM
+lblManufacturerColors=ЦВЕТА ПРОИЗВОДИТЕЛЯ
+lblColor=Цвет
+lblColorName=Название цвета
+lblFinish=Финишное покрытие
+lblPaintFinish=Тип покрытия
+lblRoughness=Шероховатость
+lblClearCoat=Прозрачное покрытие
+lblClearCoatRoughness=Шероховатость прозрачного покрытия
+lblMetalness=Металличность
+lblFlakes=Частицы
+lblOpacity=Прозрачность
+
+lblFirstStartYourFirstCar=ВАШ ПЕРВЫЙ АВТОМОБИЛЬ
+lblFirstStartPurchase=Купите свой первый автомобиль. У вас есть начальный бюджет в размере {BRANDS/purchase} v$.
+
+connection_RECONNECTION_FAILED={ИГРА ОФФЛАЙН/статус оффлайн} ПОДКЛЮЧЕНИЕ НЕ УДАЛОСЬ
+lblSwitchView=ПЕРЕКЛЮЧИТЬ ВИД
+
+lblInsufficientFunds=НЕДОСТАТОЧНО СРЕДСТВ
+msgNotEnoughMoneyToBuyVehicle=У вас недостаточно средств для покупки этого автомобиля.
+msgNotEnoughMoneyToRentVehicle=У вас недостаточно средств для аренды этого автомобиля.
+
+headerHome=Домашняя страница
+
+msgFirstTestDrive=Вы хотите настроить параметры и привязку управления перед началом сессии?
+btnProceedToSettings=ПЕРЕЙТИ К НАСТРОЙКАМ
+headerControlPresets=Пресеты управления
+
+tip_practice=Practice Session
+Track=Track
+OPTIMUM=OPTIMUM
+Track=Track
+OPTIMUM=OPTIMUM
+{PENALTY_ADDED_KEY}#1=Penalty Added
+{PENALTY_CLEARED_KEY}#1=Penalty Cleared
+SlickMedium=Slick Medium
+Track=Track
+OPTIMUM=OPTIMUM
+Track=Track
+OPTIMUM=OPTIMUM
+tooltipRental=By renting a vehicle, you pay a small amount of credit to use a vehicle for a single session, with limited customization options.
+tip_practice=Practice session allows to train while being alone on the track.
+Track=Track
+{PENALTY_ADDED_KEY}#1=Penalty Added
+{PENALTY_CLEARED_KEY}#1=Penalty Cleared
+SlickMedium=Slick Medium
+binding-brake-bias-cycle=Brake BIAS cycle
+Track=Track
+binding-brake-bias-cycle=Brake BIAS cycle
+binding-left-right=Left/Right
+binding-up-down=Up/Down
+{PENALTY_ADDED_KEY}#2=Penalty Added
+{PENALTY_CLEARED_KEY}#2=Penalty Cleared
+Track=Track
+Track=Track
+{PENALTY_ADDED_KEY}#2=Penalty Added
+{PENALTY_CLEARED_KEY}#2=Penalty Cleared
+Track=Track
+{PENALTY_ADDED_KEY}#2=Penalty Added
+Track=
+{PENALTY_ADDED_KEY}#2=Penalty Added
+lblSessionInfoLastLap=Last Lap
+Track=Track
+binding-brake-bias-cycle=Brake BIAS cycle
+tip_se-01=Challenge yourself with the high grip Mazda MX-5 Cup in the beautiful hills of Imola.
+lblSessionInfoLastLap=Last Lap
+Track=Track
+binding-brake-bias-cycle=Brake BIAS cycle
+keyF5=F5
+keyF3=F3
+keyF6=F6
+{PENALTY_ADDED_KEY}#2=Penalty Added
+tip_se-01=Challenge yourself with the high grip Mazda MX-5 Cup in the beautiful hills of Imola.
+tooltipSE-02=Enjoy a drive on a special edition of the Toyota GR86 inside a temple of motorsport.
+tooltipSE-03=Rain with a cabriolet? This can happen at Suzuka, during this wet hotstint session with a Honda S-2000.
+tooltipSE-05=Learn how to master EV vehicles and their particular braking by lifting the throttle. Be balanced in your driving!
+tooltipSE-06=The night has come, time for a ride with a Giulia GTAm with an additional challenge: the "corkscrew".
+tooltipSE-01=Challenge yourself with the high grip Mazda MX-5 Cup in the beautiful hills of Imola.
+tooltipSE-04=Mount Panorama is a challenging circuit, live the experience of professional drivers in the most challenging circuit!
