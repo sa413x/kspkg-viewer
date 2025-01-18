@@ -1,4 +1,5 @@
 # kspkg-viewer
+![image](https://github.com/user-attachments/assets/b6612031-c5bc-4abe-8118-980587284afa)
 
 ## Overview
 The kspkg-viewer is a simple tool designed to help you view and extract resource files from the Assetto Corsa Evo game. It also allows you to install a Russian language pack and remove existing patches.
