@@ -11,7 +11,7 @@ The kspkg-viewer is a simple tool designed to help you view and extract resource
 - **Patch Management**: Add or remove patches.
 
 ## Installation Instructions
-1. Download the `kspkg.zip` archive.
+1. Download the `kspkg.zip`([Releases](https://github.com/sa413x/kspkg-viewer/releases/)) archive.
 2. Extract the contents into the Assetto Corsa Evo folder.
 3. Navigate to the `kspkg` folder inside the ACE folder.
 4. Run `kspkg.exe`.
