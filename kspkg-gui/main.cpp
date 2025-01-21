@@ -1,4 +1,5 @@
 
+#include "render_extensions.hpp"
 #include "views/base_view.hpp"
 
 #include <imgui.h>
@@ -50,8 +51,11 @@ int main( int, char** ) {
 
     ImGui_ImplWin32_Init( hwnd );
     ImGui_ImplDX11_Init( g_pd3dDevice, g_pd3dDeviceContext );
+    ImGui::RenderExtensions::Setup( g_pd3dDevice );
 
     constexpr auto clear_color = ImVec4( 0.45f, 0.55f, 0.60f, 1.00f );
+
+    views::base_view::setup_all();
 
     bool done = false;
     while ( !done ) {

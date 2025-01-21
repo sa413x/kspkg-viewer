@@ -88,7 +88,7 @@ namespace kspkg {
         return std::make_shared< package >( std::move( fs ), path, files );
     }
 
-    expected< bool > repack_package( const std::shared_ptr< package >& package, const std::vector< std::filesystem::path >& new_filespathes,
+    expected< void > repack_package( const std::shared_ptr< package >& package, const std::vector< std::filesystem::path >& new_filespathes,
                                      const std::filesystem::path& new_files_root_dir ) {
         std::ofstream fs( package->get_path(), std::ios::binary | std::ios::app );
         if ( !fs.is_open() )
@@ -144,7 +144,7 @@ namespace kspkg {
 
         fs.write( reinterpret_cast< const char* >( metadata.data() ), static_cast< std::streamsize >( metadata.size() ) );
 
-        return true;
+        return {};
     }
 
     expected< bool > remove_patches( const std::shared_ptr< package >& package ) {

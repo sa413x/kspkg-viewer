@@ -113,7 +113,7 @@ namespace kspkg {
      * @param new_filespathes Pathes to the new files
      * @param new_files_root_dir Virtual root directory for the files
      */
-    expected< bool > repack_package( const std::shared_ptr< package >& package, const std::vector< std::filesystem::path >& new_filespathes,
+    expected< void > repack_package( const std::shared_ptr< package >& package, const std::vector< std::filesystem::path >& new_filespathes,
                                      const std::filesystem::path& new_files_root_dir );
 
     /**

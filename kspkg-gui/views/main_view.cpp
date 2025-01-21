@@ -1,8 +1,10 @@
-﻿#include "main_view.hpp"
+﻿#include <Windows.h>
+#include <d3d11.h>
 
-#include <Windows.h>
 #include <imgui.h>
+#include <ImGuiNotify.hpp>
 #include <kspkg-core/include.hpp>
+
 #include <map>
 #include <string>
 #include <vector>
@@ -10,10 +12,160 @@
 #include <algorithm>
 #include <ranges>
 
+#include "main_view.hpp"
+#include "content/content_processor_factory.hpp"
+
 namespace views {
 
-    void build_hierarchy( const std::vector< std::shared_ptr< kspkg::file > >& files, const std::shared_ptr< file_node_t >& root ) {
+    void main_view::setup() {
+        const auto content_path = R"(D:\SteamLibrary\steamapps\common\Assetto Corsa EVO\content.kspkg)";
+        // const auto content_path = std::filesystem::current_path() / ".." / "views.kspkg";
+
+        const auto package = kspkg::load_package( content_path );
+
+        if ( !package ) {
+            MessageBoxA( nullptr, package.error().c_str(), "Error", MB_ICONERROR );
+            ExitProcess( 0 );
+        }
+
+        package_ = package.value();
+        root_node_ = std::make_shared< file_node_t >();
+
+        build_hierarchy( package_->get_files(), root_node_ );
+    }
+
+    void main_view::render() {
+        static char filter_buffer[ 256 ] = "";
+        static std::shared_ptr< file_node_t > selected_node = nullptr;
+
+        const auto viewport = ImGui::GetMainViewport();
+        ImGui::SetNextWindowPos( viewport->Pos );
+        ImGui::SetNextWindowSize( viewport->Size );
+
+        ImGui::Begin( "Main View", nullptr,
+                      ImGuiWindowFlags_NoResize | ImGuiWindowFlags_NoMove | ImGuiWindowFlags_NoCollapse | ImGuiWindowFlags_NoTitleBar |
+                          ImGuiWindowFlags_MenuBar );
+
+        ImGui::BeginMenuBar();
+
+        if ( ImGui::BeginMenu( "Addons" ) ) {
+            if ( ImGui::MenuItem( "Install Russian Language", nullptr, nullptr, true ) ) {
+                on_install_russian_language();
+            }
+            if ( ImGui::MenuItem( "Remove All Patches", nullptr, nullptr, true ) ) {
+                on_remove_all_patches();
+            }
+            ImGui::EndMenu();
+        }
+        ImGui::EndMenuBar();
+
+        ImGui::Columns( 2, "HierarchyPreview" );
+
+        // Left Column
+        {
+            ImGui::Text( "Filter:" );
+            ImGui::InputText( "##FilterInput", filter_buffer, sizeof( filter_buffer ) );
+
+            ImGui::Text( "Items:" );
+            ImGui::BeginChild( "LeftPanel", ImVec2( 0, 0 ), 0, 0 );
+
+            if ( root_node_ ) {
+                for ( const auto& [ child_name, child_node ] : root_node_->children ) {
+                    render_hierarchy( child_node, child_name, filter_buffer, selected_node );
+                }
+            }
+
+            ImGui::EndChild();
+        }
+
+        ImGui::NextColumn();
+
+        // Right Column - Preview
+        {
+            ImGui::Text( "Preview:" );
+
+            if ( selected_node ) {
+                if ( selected_node->is_file ) {
+                    ImGui::Text( "File: %s", selected_node->name.c_str() );
+
+                    ImGui::SameLine();
+
+                    if ( ImGui::Button( "Extract" ) ) {
+                        const auto out_path = std::filesystem::current_path() / "__output__";
+                        if ( const auto file = package_->extract_file( selected_node->ref, out_path ); file ) {
+                            ImGui::InsertNotification( ImGuiToast( ImGuiToastType::Info, 3000, "File extracted successfully to: %s",
+                                                                   ( out_path / selected_node->name ).string().c_str() ) );
+                        }
+                        else {
+                            ImGui::InsertNotification(
+                                ImGuiToast( ImGuiToastType::Error, 3000, "Failed to extract file: %s", file.error().c_str() ) );
+                        }
+                    }
+
+                    if ( const auto processor = content_processor_factory::create_processor( selected_node->name ) ) {
+                        processor->process( package_, selected_node->ref );
+                    }
+                    else {
+                        ImGui::Text( "Unsupported file type for preview." );
+                    }
+                }
+                else {
+                    ImGui::Text( "Folder: %s", selected_node->name.c_str() );
+                    ImGui::Text( "Select a file to preview its views." );
+                }
+            }
+            else {
+                ImGui::Text( "No selection made." );
+            }
+        }
+
+        ImGui::PushStyleVar( ImGuiStyleVar_WindowRounding, 0.f );
+        ImGui::PushStyleVar( ImGuiStyleVar_WindowBorderSize, 0.f );
+
+        ImGui::PushStyleColor( ImGuiCol_WindowBg, ImVec4( 0.15f, 0.15f, 0.15f, 1.00f ) );
+
+        ImGui::RenderNotifications();
+
+        ImGui::PopStyleVar( 2 );
+        ImGui::PopStyleColor( 1 );
+
+        ImGui::End();
+    }
+
+    void main_view::on_install_russian_language() const {
+        const auto lang_dir = std::filesystem::current_path() / "resources" / "ru_lang";
+        const std::vector lang_files = {
+            lang_dir / "cn.cars.loc",
+            lang_dir / "cn.loc",
+            lang_dir / "cn.tooltips.loc",
+        };
+
+        if ( const auto result = repack_package( package_, lang_files, R"(uiresources\localization\)" ) ) {
+            ImGui::InsertNotification( ImGuiToast( ImGuiToastType::Info, 3000, "Russian language installed successfully." ) );
+        }
+        else {
+            ImGui::InsertNotification(
+                ImGuiToast( ImGuiToastType::Error, 3000, "Failed to install Russian language: %s", result.error().c_str() ) );
+        }
+    }
+
+    void main_view::on_remove_all_patches() const {
+        if ( const auto remove_result = remove_patches( package_ ) ) {
+            ImGui::InsertNotification(
+                ImGuiToast( ImGuiToastType::Info, 3000, *remove_result ? "All patches removed successfully." : "No patches found." ) );
+        }
+        else {
+            ImGui::InsertNotification(
+                ImGuiToast( ImGuiToastType::Error, 3000, "Failed to remove all patches: %s", remove_result.error().c_str() ) );
+        }
+    }
+
+    void main_view::build_hierarchy( const std::vector< std::shared_ptr< kspkg::file > >& files,
+                                     const std::shared_ptr< file_node_t >& root ) {
         for ( const auto& file : files ) {
+            if ( file->is_directory() )
+                continue;
+
             auto current_node = root;
             size_t start = 0, end;
 
@@ -37,22 +189,17 @@ namespace views {
         }
     }
 
-    bool has_matching_files( const std::shared_ptr< file_node_t >& node, const std::string& filter ) {
+    bool main_view::has_matching_files( const std::shared_ptr< file_node_t >& node, const std::string& filter ) {
         if ( node->is_file ) {
             return filter.empty() || node->name.find( filter ) != std::string::npos;
         }
 
-        for ( const auto& child_node : node->children | std::views::values ) {
-            if ( has_matching_files( child_node, filter ) ) {
-                return true;
-            }
-        }
-
-        return false;
+        return std::ranges::any_of( node->children,
+                                    [ &filter ]( const auto& child ) { return has_matching_files( child.second, filter ); } );
     }
 
-    void render_hierarchy( const std::shared_ptr< file_node_t >& node, const std::string& name, const std::string& filter,
-                           std::shared_ptr< file_node_t >& selected_node ) {
+    void main_view::render_hierarchy( const std::shared_ptr< file_node_t >& node, const std::string& name, const std::string& filter,
+                                      std::shared_ptr< file_node_t >& selected_node ) {
         if ( !has_matching_files( node, filter ) ) {
             return;
         }
@@ -107,156 +254,10 @@ namespace views {
         }
     }
 
-    bool has_extension( const std::string& file_name, const std::vector< std::string >& extensions ) {
-        for ( const auto& ext : extensions ) {
-            if ( file_name.size() >= ext.size() && file_name.compare( file_name.size() - ext.size(), ext.size(), ext ) == 0 ) {
-                return true;
-            }
-        }
-        return false;
-    }
-
-    void main_view::render() {
-        static char filter_buffer[ 256 ] = "";
-        static std::shared_ptr< file_node_t > selected_node = nullptr;
-
-        if ( package_ == nullptr ) {
-            const auto content_path = std::filesystem::current_path() / ".." / "content.kspkg";
-            if ( const auto package = kspkg::load_package( content_path ); package.has_value() ) {
-                package_ = package.value();
-                root_node_ = std::make_shared< file_node_t >();
-
-                std::vector< std::shared_ptr< kspkg::file > > file_paths;
-                for ( const auto& file : package_->get_files() ) {
-                    if ( !file->is_directory() ) {
-                        file_paths.emplace_back( file );
-                    }
-                }
-
-                build_hierarchy( file_paths, root_node_ );
-            }
-            else {
-                MessageBoxA( nullptr, "Failed to find content.kspkg. Make sure you moved `kspkg` folder to ACE root folder.", "Error",
-                             MB_ICONERROR );
-                ExitProcess( 0 );
-            }
-        }
-
-        const auto viewport = ImGui::GetMainViewport();
-        ImGui::SetNextWindowPos( viewport->Pos );
-        ImGui::SetNextWindowSize( viewport->Size );
-
-        ImGui::Begin( "Main View", nullptr,
-                      ImGuiWindowFlags_NoResize | ImGuiWindowFlags_NoMove | ImGuiWindowFlags_NoCollapse | ImGuiWindowFlags_NoTitleBar |
-                          ImGuiWindowFlags_MenuBar );
-
-        ImGui::BeginMenuBar();
-
-        if ( ImGui::BeginMenu( "Addons" ) ) {
-            if ( ImGui::MenuItem( "Install Russian Language", nullptr, nullptr, true ) ) {
-                const auto lang_dir = std::filesystem::current_path() / "resources" / "ru_lang";
-                if ( const auto result = repack_package( package_,
-                                                         {
-                                                             lang_dir / "cn.cars.loc",
-                                                             lang_dir / "cn.loc",
-                                                             lang_dir / "cn.tooltips.loc",
-                                                         },
-                                                         R"(uiresources\localization\)" ) ) {
-                    if ( *result ) {
-                        MessageBoxA( nullptr, "Russian language installed successfully.", "Install Russian Language", MB_ICONINFORMATION );
-                    }
-                    else {
-                        MessageBoxA( nullptr, "Unexpected", "Install Russian Language", MB_ICONERROR );
-                    }
-                }
-                else {
-                    MessageBoxA( nullptr, result.error().data(), "Install Russian Language", MB_ICONERROR );
-                }
-            }
-            if ( ImGui::MenuItem( "Remove All Patches", nullptr, nullptr, true ) ) {
-                if ( const auto result = remove_patches( package_ ) ) {
-                    if ( *result ) {
-                        MessageBoxA( nullptr, "All patches removed successfully.", "Remove Patches", MB_ICONINFORMATION );
-                    }
-                    else {
-                        MessageBoxA( nullptr, "No patches found.", "Remove Patches", MB_ICONWARNING );
-                    }
-                }
-                else {
-                    MessageBoxA( nullptr, result.error().data(), "Remove Patches", MB_ICONERROR );
-                }
-            }
-            ImGui::EndMenu();
-        }
-        ImGui::EndMenuBar();
-
-        ImGui::Columns( 2, "HierarchyPreview" );
-
-        // Left Column
-        {
-            ImGui::Text( "Filter:" );
-            ImGui::InputText( "##FilterInput", filter_buffer, sizeof( filter_buffer ) );
-
-            ImGui::Text( "Items:" );
-            ImGui::BeginChild( "LeftPanel", ImVec2( 0, 0 ), 0, 0 );
-
-            if ( root_node_ ) {
-                for ( const auto& [ child_name, child_node ] : root_node_->children ) {
-                    render_hierarchy( child_node, child_name, filter_buffer, selected_node );
-                }
-            }
-
-            ImGui::EndChild();
-        }
-
-        ImGui::NextColumn();
-
-        // Right Column - Preview
-        {
-            ImGui::Text( "Preview:" );
-
-            if ( selected_node ) {
-                if ( selected_node->is_file ) {
-                    ImGui::Text( "File: %s", selected_node->name.c_str() );
-
-                    ImGui::SameLine();
-
-                    if ( ImGui::Button( "Extract" ) ) {
-                        const auto out_path = std::filesystem::current_path() / "__output__";
-                        if ( const auto file = package_->extract_file( selected_node->ref, out_path ); !file ) {
-                            MessageBoxA( nullptr, file.error().data(), "Extraction Error", MB_ICONERROR );
-                        }
-                    }
-
-                    static const std::vector< std::string > kTextExtensions = { ".txt", ".ini", ".json", ".html", ".css", ".js", ".loc" };
-
-                    if ( has_extension( selected_node->name, kTextExtensions ) ) {
-                        if ( const auto file_content = package_->extract_file( selected_node->ref ) ) {
-                            ImGui::PushStyleColor( ImGuiCol_ChildBg, { 0.06f, 0.06f, 0.06f, 1.f } );
-                            ImGui::BeginChild( "FilePreview", ImVec2( 0, 0 ), 0, ImGuiWindowFlags_HorizontalScrollbar );
-
-                            const std::string file_content_str( file_content->data(), file_content->data() + file_content->size() );
-                            ImGui::TextUnformatted( file_content_str.data(), file_content_str.data() + file_content_str.size() );
-
-                            ImGui::EndChild();
-                            ImGui::PopStyleColor();
-                        }
-                    }
-                    else {
-                        ImGui::Text( "Unsupported file type for preview." );
-                    }
-                }
-                else {
-                    ImGui::Text( "Folder: %s", selected_node->name.c_str() );
-                    ImGui::Text( "Select a file to preview its content." );
-                }
-            }
-            else {
-                ImGui::Text( "No selection made." );
-            }
-        }
-
-        ImGui::End();
+    bool main_view::has_extension( const std::string& file_name, const std::vector< std::string >& extensions ) {
+        return std::ranges::any_of( extensions, [ &file_name ]( const auto& ext ) {
+            return file_name.size() >= ext.size() && file_name.compare( file_name.size() - ext.size(), ext.size(), ext ) == 0;
+        } );
     }
 
 } // namespace views

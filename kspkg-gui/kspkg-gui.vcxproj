@@ -46,13 +46,13 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <OutDir>$(SolutionDir)__build__\$(ProjectName)\$(Configuration)_$(Platform)\</OutDir>
     <IntDir>$(SolutionDir)__build__\$(ProjectName)\$(Configuration)_$(Platform)\obj\</IntDir>
-    <IncludePath>$(SolutionDir)kspkg-core\include\;$(SolutionDir)vendor\imgui\;$(IncludePath)</IncludePath>
+    <IncludePath>$(SolutionDir)vendor\imgui-notify\;$(SolutionDir)imgui-bridge\;$(SolutionDir)kspkg-gui\;$(SolutionDir)kspkg-core\include\;$(SolutionDir)vendor\imgui\;$(IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)__build__\kspkg-core\$(Configuration)_$(Platform)\;$(SolutionDir)__build__\imgui-bridge\$(Configuration)_$(Platform)\;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <OutDir>$(SolutionDir)__build__\$(ProjectName)\$(Configuration)_$(Platform)\</OutDir>
     <IntDir>$(SolutionDir)__build__\$(ProjectName)\$(Configuration)_$(Platform)\obj\</IntDir>
-    <IncludePath>$(SolutionDir)kspkg-core\include\;$(SolutionDir)vendor\imgui\;$(IncludePath)</IncludePath>
+    <IncludePath>$(SolutionDir)vendor\imgui-notify\;$(SolutionDir)imgui-bridge\;$(SolutionDir)kspkg-gui\;$(SolutionDir)kspkg-core\include\;$(SolutionDir)vendor\imgui\;$(IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)__build__\kspkg-core\$(Configuration)_$(Platform)\;$(SolutionDir)__build__\imgui-bridge\$(Configuration)_$(Platform)\;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -91,10 +91,16 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="views\content\image_content_processor.cpp" />
+    <ClCompile Include="views\content\text_content_processor.cpp" />
     <ClCompile Include="views\main_view.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="views\base_view.hpp" />
+    <ClInclude Include="views\content\content_processor.hpp" />
+    <ClInclude Include="views\content\content_processor_factory.hpp" />
+    <ClInclude Include="views\content\image_content_processor.hpp" />
+    <ClInclude Include="views\content\text_content_processor.hpp" />
     <ClInclude Include="views\main_view.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -3,9 +3,15 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="views\main_view.cpp" />
+    <ClCompile Include="views\content\text_content_processor.cpp" />
+    <ClCompile Include="views\content\image_content_processor.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="views\main_view.hpp" />
     <ClInclude Include="views\base_view.hpp" />
+    <ClInclude Include="views\content\content_processor.hpp" />
+    <ClInclude Include="views\content\text_content_processor.hpp" />
+    <ClInclude Include="views\content\image_content_processor.hpp" />
+    <ClInclude Include="views\content\content_processor_factory.hpp" />
   </ItemGroup>
 </Project>
