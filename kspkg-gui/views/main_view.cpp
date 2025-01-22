@@ -16,7 +16,8 @@
 namespace views {
 
     void main_view::setup() {
-        const auto content_path = std::filesystem::current_path() / ".." / "views.kspkg";
+        // const auto content_path = R"(D:\SteamLibrary\steamapps\common\Assetto Corsa EVO\content.kspkg)";
+        const auto content_path = std::filesystem::current_path() / ".." / "content.kspkg";
 
         const auto package = kspkg::load_package( content_path );
 
