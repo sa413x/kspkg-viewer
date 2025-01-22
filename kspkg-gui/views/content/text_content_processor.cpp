@@ -8,7 +8,6 @@ namespace views {
         static std::map< std::string, TextEditor::LanguageDefinition > ext_map = {
             { ".html", TextEditor::LanguageDefinition::HTML() },
             { ".loc", TextEditor::LanguageDefinition::HTML() },
-            { ".js", TextEditor::LanguageDefinition::AngelScript() }, // Temp
         };
 
         static std::shared_ptr< TextEditor > editor;
