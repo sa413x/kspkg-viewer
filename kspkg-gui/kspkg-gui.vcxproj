@@ -91,11 +91,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="text_editor\text_editor.cpp" />
     <ClCompile Include="views\content\image_content_processor.cpp" />
     <ClCompile Include="views\content\text_content_processor.cpp" />
     <ClCompile Include="views\main_view.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="text_editor\text_editor.hpp" />
     <ClInclude Include="views\base_view.hpp" />
     <ClInclude Include="views\content\content_processor.hpp" />
     <ClInclude Include="views\content\content_processor_factory.hpp" />
