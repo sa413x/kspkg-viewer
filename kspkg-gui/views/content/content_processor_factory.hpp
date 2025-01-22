@@ -12,8 +12,9 @@ namespace views {
     class content_processor_factory {
     public:
         static std::shared_ptr< content_processor > create_processor( const std::string& file_name ) {
-            static const std::vector< std::string > kTextExtensions = { ".txt", ".ini", ".json", ".html", ".css", ".js", ".loc" };
-            static const std::vector< std::string > kImageExtensions = { ".png", ".jpg" };
+            static const std::vector< std::string > kTextExtensions = { ".txt", ".ini", ".json", ".html", ".css", ".js",
+                                                                        ".ts",  ".loc", ".data", ".md",   ".lut", ".csv" };
+            static const std::vector< std::string > kImageExtensions = { ".png", ".jpg", ".svg" };
 
             if ( has_extension( file_name, kTextExtensions ) ) {
                 return std::make_shared< text_content_processor >();

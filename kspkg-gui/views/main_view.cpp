@@ -3,14 +3,12 @@
 
 #include <imgui.h>
 #include <ImGuiNotify.hpp>
-#include <kspkg-core/include.hpp>
 
 #include <map>
 #include <string>
 #include <vector>
 #include <memory>
 #include <algorithm>
-#include <ranges>
 
 #include "main_view.hpp"
 #include "content/content_processor_factory.hpp"

@@ -620,7 +620,7 @@ namespace ImGui
                     // If the button is pressed, we want to remove the notification
                     if ( Button( /*ICON_FA_XMARK*/ "X" ) )
                     {
-                        RemoveNotification(i);
+                        RemoveNotification(static_cast<int>(i));
                     }
                 }
 

@@ -46,12 +46,12 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <OutDir>$(SolutionDir)__build__\$(ProjectName)\$(Configuration)_$(Platform)\</OutDir>
     <IntDir>$(SolutionDir)__build__\$(ProjectName)\$(Configuration)_$(Platform)\obj\</IntDir>
-    <IncludePath>$(SolutionDir)vendor\stb\;$(SolutionDir)vendor\imgui\;$(IncludePath)</IncludePath>
+    <IncludePath>$(SolutionDir)vendor\nanosvg\src\;$(SolutionDir)vendor\stb\;$(SolutionDir)vendor\imgui\;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <OutDir>$(SolutionDir)__build__\$(ProjectName)\$(Configuration)_$(Platform)\</OutDir>
     <IntDir>$(SolutionDir)__build__\$(ProjectName)\$(Configuration)_$(Platform)\obj\</IntDir>
-    <IncludePath>$(SolutionDir)vendor\stb\;$(SolutionDir)vendor\imgui\;$(IncludePath)</IncludePath>
+    <IncludePath>$(SolutionDir)vendor\nanosvg\src\;$(SolutionDir)vendor\stb\;$(SolutionDir)vendor\imgui\;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
