@@ -1,11 +1,11 @@
 # kspkg-viewer
-![image](https://github.com/user-attachments/assets/b6612031-c5bc-4abe-8118-980587284afa)
+![image](https://github.com/user-attachments/assets/102e846b-126d-420e-b55c-320a32d54f10)
 
 ## Overview
 The kspkg-viewer is a simple tool designed to help you view and extract resource files from the Assetto Corsa Evo game. It also allows you to install a Russian language pack and remove existing patches.
 
 ### Key Features
-- **File Preview**: Supports previewing text-based file content (for now), including `.txt`, `.ini`, `.json`, `.html`, `.css`, `.js`, and `.loc` files.
+- **File Preview**: Supports previewing text-based file content & Images, including `.txt`, `.ini`, `.json`, `.html`, `.css`, `.js`, `.ts`, `.loc`, `.data`, `.md`, `.lut`, `.csv`, `.png`, `.jpg`, `.svg` files.
 - **Resource Extraction**: Allows extraction of files.
 - **Russian Language Installation**: Install a Russian language pack for the game.
 - **Patch Management**: Add or remove patches.
@@ -27,3 +27,17 @@ The kspkg-viewer is a simple tool designed to help you view and extract resource
 1. Follow the installation steps above.
 2. Launch the application.
 3. Go to the `Addons` menu and select **Remove All Patches**.
+
+# Thirdparty
+* [ImGui](https://github.com/ocornut/imgui/)
+* [Nano SVG](https://github.com/memononen/nanosvg/)
+* [STB](https://github.com/nothings/stb/)
+* [imgui-notify](https://github.com/patrickcjk/imgui-notify)
+* [ImGuiColorTextEdit](https://github.com/BalazsJako/ImGuiColorTextEdit)
+
+## Other Projects
+* [ACEvo.Package](https://github.com/Nenkai/ACEvo.Package/) (C#)
+* [ace-kspkg](https://github.com/ntpopgetdope/ace-kspkg) (Python)
+
+## License
+MIT License
