@@ -55,6 +55,18 @@ namespace views {
             }
             ImGui::EndMenu();
         }
+
+        if ( ImGui::BeginMenu( "Help" ) ) {
+            if ( ImGui::MenuItem( "GitHub Issues Page", nullptr, nullptr, true ) ) {
+                ShellExecuteA( nullptr, "open", "https://github.com/sa413x/kspkg-viewer/issues", nullptr, nullptr, SW_SHOWNORMAL );
+            }
+
+            ImGui::Separator();
+            ImGui::Text( "v0.2.0" );
+
+            ImGui::EndMenu();
+        }
+
         ImGui::EndMenuBar();
 
         ImGui::Columns( 2, "HierarchyPreview" );
