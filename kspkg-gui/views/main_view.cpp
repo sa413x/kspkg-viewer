@@ -7,6 +7,7 @@
 #include <map>
 #include <string>
 #include <vector>
+#include <queue>
 #include <memory>
 #include <algorithm>
 
@@ -95,13 +96,14 @@ namespace views {
             ImGui::Text( "Preview:" );
 
             if ( selected_node ) {
-                if ( selected_node->is_file ) {
-                    ImGui::Text( "File: %s", selected_node->name.c_str() );
+                ImGui::Text( selected_node->is_file ? "File: %s" : "Directory: %s", selected_node->name.c_str() );
 
-                    ImGui::SameLine();
+                ImGui::SameLine();
 
-                    if ( ImGui::Button( "Extract" ) ) {
-                        const auto out_path = std::filesystem::current_path() / "__output__";
+                if ( ImGui::Button( "Extract" ) ) {
+                    const auto out_path = std::filesystem::current_path() / "__output__";
+
+                    if ( selected_node->is_file ) {
                         if ( const auto file = package_->extract_file( selected_node->ref, out_path ); file ) {
                             ImGui::InsertNotification( ImGuiToast( ImGuiToastType::Info, 3000, "File extracted successfully to: %s",
                                                                    ( out_path / selected_node->name ).string().c_str() ) );
@@ -111,17 +113,44 @@ namespace views {
                                 ImGuiToast( ImGuiToastType::Error, 3000, "Failed to extract file: %s", file.error().c_str() ) );
                         }
                     }
+                    else {
+                        size_t extracted = 0;
+                        size_t errors = 0;
 
+                        std::queue< std::shared_ptr< file_node_t > > queue;
+                        queue.push( selected_node );
+
+                        for ( ; !queue.empty(); queue.pop() ) {
+                            const auto& node = queue.front();
+                            if ( node->is_file ) {
+                                if ( const auto file = package_->extract_file( node->ref, out_path ); file ) {
+                                    extracted += 1;
+                                }
+                                else {
+                                    ImGui::InsertNotification( ImGuiToast( ImGuiToastType::Error, 10000, "Failed to extract file %s: %s",
+                                                                           node->ref->get_name().data(), file.error().c_str() ) );
+                                    errors += 1;
+                                }
+                            }
+                            else {
+                                for ( const auto& [ _, node ] : node->children ) {
+                                    queue.push( node );
+                                }
+                            }
+                        }
+
+                        ImGui::InsertNotification( ImGuiToast( ImGuiToastType::Info, 3000,
+                                                               "Extracted %d file(s), failed to extract %d file(s)", extracted, errors ) );
+                    }
+                }
+
+                if ( selected_node->is_file ) {
                     if ( const auto processor = content_processor_factory::create_processor( selected_node->name ) ) {
                         processor->process( package_, selected_node->ref );
                     }
                     else {
                         ImGui::Text( "Unsupported file type for preview." );
                     }
-                }
-                else {
-                    ImGui::Text( "Folder: %s", selected_node->name.c_str() );
-                    ImGui::Text( "Select a file to preview its views." );
                 }
             }
             else {
@@ -184,6 +213,7 @@ namespace views {
                 if ( auto folder_name = path.substr( start, end - start ); !folder_name.empty() ) {
                     if ( !current_node->children.contains( folder_name ) ) {
                         current_node->children[ folder_name.data() ] = std::make_shared< file_node_t >();
+                        current_node->children[ folder_name.data() ]->name = folder_name;
                     }
                     current_node = current_node->children[ folder_name.data() ];
                 }
@@ -226,7 +256,12 @@ namespace views {
         }
         else {
             ImGui::PushStyleColor( ImGuiCol_Text, folder_color );
-            if ( ImGui::TreeNode( name.c_str() ) ) {
+
+            const bool opened = ImGui::TreeNodeEx( name.c_str(), selected_node == node ? ImGuiTreeNodeFlags_Selected : 0 );
+            if ( ImGui::IsItemClicked() ) {
+                selected_node = node;
+            }
+            if ( opened ) {
                 ImGui::PopStyleColor();
 
                 std::vector< std::pair< std::string, std::shared_ptr< file_node_t > > > directories;
