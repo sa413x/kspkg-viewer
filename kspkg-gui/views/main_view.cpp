@@ -63,7 +63,7 @@ namespace views {
             }
 
             ImGui::Separator();
-            ImGui::Text( "v0.2.0" );
+            ImGui::Text( "v0.3.0" );
 
             ImGui::EndMenu();
         }
