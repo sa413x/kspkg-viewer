@@ -13,7 +13,7 @@ namespace views {
     public:
         static std::shared_ptr< content_processor > create_processor( const std::string& file_name ) {
             static const std::vector< std::string > kTextExtensions = { ".txt", ".ini", ".json", ".html", ".css", ".js",
-                                                                        ".ts",  ".loc", ".data", ".md",   ".lut", ".csv" };
+                                                                        ".ts",  ".loc", ".data", ".md", ".lut", ".csv", ".less" };
             static const std::vector< std::string > kImageExtensions = { ".png", ".jpg", ".svg" };
 
             if ( has_extension( file_name, kTextExtensions ) ) {
