@@ -3571,3 +3571,55 @@ const TextEditor::LanguageDefinition& TextEditor::LanguageDefinition::Lua() {
     }
     return langDef;
 }
+
+const TextEditor::LanguageDefinition& TextEditor::LanguageDefinition::JS() {
+    static bool inited = false;
+    static LanguageDefinition langDef;
+    if ( !inited ) {
+        static const char* const keywords[] = { "break",    "case",   "catch",  "class",  "const",      "continue", "debugger", "default",
+                                                "delete",   "do",     "else",   "export", "extends",    "false",    "finally",  "for",
+                                                "function", "if",     "import", "in",     "instanceof", "new",      "null",     "return",
+                                                "super",    "switch", "this",   "throw",  "true",       "try",      "typeof",   "var",
+                                                "void",     "while",  "with",   "let",    "static",     "yield",    "await" };
+        for ( auto& k : keywords )
+            langDef.mKeywords.insert( k );
+
+        langDef.mTokenize = []( const char* in_begin, const char* in_end, const char*& out_begin, const char*& out_end,
+                                PaletteIndex& paletteIndex ) -> bool {
+            paletteIndex = PaletteIndex::Max;
+
+            while ( in_begin < in_end && isascii( *in_begin ) && isblank( *in_begin ) )
+                in_begin++;
+
+            if ( in_begin == in_end ) {
+                out_begin = in_end;
+                out_end = in_end;
+                paletteIndex = PaletteIndex::Default;
+            }
+            else if ( TokenizeCStyleString( in_begin, in_end, out_begin, out_end ) )
+                paletteIndex = PaletteIndex::String;
+            else if ( TokenizeCStyleCharacterLiteral( in_begin, in_end, out_begin, out_end ) )
+                paletteIndex = PaletteIndex::CharLiteral;
+            else if ( TokenizeCStyleIdentifier( in_begin, in_end, out_begin, out_end ) )
+                paletteIndex = PaletteIndex::Identifier;
+            else if ( TokenizeCStyleNumber( in_begin, in_end, out_begin, out_end ) )
+                paletteIndex = PaletteIndex::Number;
+            else if ( TokenizeCStylePunctuation( in_begin, in_end, out_begin, out_end ) )
+                paletteIndex = PaletteIndex::Punctuation;
+
+            return paletteIndex != PaletteIndex::Max;
+        };
+
+        langDef.mCommentStart = "/*";
+        langDef.mCommentEnd = "*/";
+        langDef.mSingleLineComment = "//";
+
+        langDef.mCaseSensitive = true;
+        langDef.mAutoIndentation = true;
+
+        langDef.mName = "JS";
+
+        inited = true;
+    }
+    return langDef;
+}

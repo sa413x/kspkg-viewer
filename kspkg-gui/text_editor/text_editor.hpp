@@ -160,6 +160,7 @@ public:
         static const LanguageDefinition& AngelScript();
         static const LanguageDefinition& HTML();
         static const LanguageDefinition& Lua();
+        static const LanguageDefinition& JS();
     };
 
     TextEditor();
