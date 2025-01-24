@@ -17,7 +17,7 @@ namespace kspkg {
 
     enum class file_flags_t : uint16_t {
         kIsDirectory = 1 << 0,
-        kIsFile = 1 << 8,
+        kIsEncrypted = 1 << 8, // https://github.com/ntpopgetdope/ace-kspkg
     };
 
     struct file_desc_t {
@@ -43,8 +43,8 @@ namespace kspkg {
             return desc_.flags & static_cast< uint16_t >( file_flags_t::kIsDirectory );
         }
 
-        [[nodiscard]] bool is_file() const noexcept {
-            return desc_.flags & static_cast< uint16_t >( file_flags_t::kIsFile );
+        [[nodiscard]] bool is_encrypted() const noexcept {
+            return desc_.flags & static_cast< uint16_t >( file_flags_t::kIsEncrypted );
         }
 
         [[nodiscard]] size_t get_file_size() const noexcept {

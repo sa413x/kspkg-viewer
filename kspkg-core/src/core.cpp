@@ -31,13 +31,12 @@ namespace kspkg {
             return unexpected( "Cannot extract a directory." );
         }
 
-        if ( !file->is_file() ) {
-            return unexpected( "Cannot extract unknown file." );
-        }
-
         std::vector< uint8_t > data( file->get_file_size() );
         stream_.read( reinterpret_cast< char* >( data.data() ), static_cast< std::streamsize >( file->get_file_size() ) );
-        detail::encrypt_decrypt_data( data, kXorKey );
+
+        if ( file->is_encrypted() ) {
+            detail::encrypt_decrypt_data( data, kXorKey );
+        }
 
         std::ofstream output( out_path, std::ios::binary );
         output.write( reinterpret_cast< char* >( data.data() ), static_cast< std::streamsize >( file->get_file_size() ) );
@@ -57,7 +56,7 @@ namespace kspkg {
         result.resize( file->get_file_size() );
         stream_.read( reinterpret_cast< char* >( result.data() ), static_cast< std::streamsize >( file->get_file_size() ) );
 
-        if ( file->is_file() ) {
+        if ( file->is_encrypted() ) {
             detail::encrypt_decrypt_data( result, kXorKey );
         }
 
