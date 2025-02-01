@@ -8,6 +8,8 @@
 #include <d3d11.h>
 #include <tchar.h>
 
+#include "font_roboto.hpp"
+
 // ImGUI DX11 boilerplate code from example_win32_directx11
 
 static ID3D11Device* g_pd3dDevice = nullptr;
@@ -51,6 +53,10 @@ int main( int, char** ) {
 
     ImGui_ImplWin32_Init( hwnd );
     ImGui_ImplDX11_Init( g_pd3dDevice, g_pd3dDeviceContext );
+
+    ImGui::GetIO().Fonts->AddFontFromMemoryTTF( fonts::font_roboto, sizeof( fonts::font_roboto ), 16.f, nullptr,
+                                                ImGui::GetIO().Fonts->GetGlyphRangesCyrillic() );
+
     ImGui::RenderExtensions::Setup( g_pd3dDevice );
 
     constexpr auto clear_color = ImVec4( 0.45f, 0.55f, 0.60f, 1.00f );
