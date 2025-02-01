@@ -79,7 +79,7 @@ namespace kspkg {
         constexpr auto max_count = kMetadataSize / sizeof( file_desc_t );
         for ( size_t i = 0; i < max_count; i++ ) {
             if ( const auto& file_desc = *reinterpret_cast< file_desc_t* >( metadata_buffer.data() + i * sizeof( file_desc_t ) );
-                 file_desc.file_size != 0 ) {
+                 file_desc.file_hash != 0 ) {
                 files.emplace_back( std::make_shared< file >( file_desc ) );
             }
         }
@@ -111,8 +111,6 @@ namespace kspkg {
             std::vector< uint8_t > new_data( file_size );
             file.read( reinterpret_cast< char* >( new_data.data() ), file_size );
 
-            detail::encrypt_decrypt_data( new_data, kXorKey );
-
             fs.seekp( 0, std::ios::end );
             const auto offset = fs.tellp();
             fs.seekp( 0, std::ios::beg );
@@ -122,6 +120,9 @@ namespace kspkg {
             // Find file in package and overwrite its desc
             for ( auto&& loaded_file : files ) {
                 if ( loaded_file->get_name() == virtual_full_filename ) {
+                    if ( loaded_file->is_encrypted() ) {
+                        detail::encrypt_decrypt_data( new_data, kXorKey );
+                    }
                     auto& desc = loaded_file->desc();
                     desc.file_size = file_size;
                     desc.file_offset = offset;

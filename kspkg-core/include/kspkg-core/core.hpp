@@ -25,7 +25,7 @@ namespace kspkg {
         uint8_t gap0[ 0x4 ] {};
         uint16_t flags;
         uint16_t name_length;
-        uint8_t gap1[ 0x8 ] {};
+        size_t file_hash; // https://github.com/ntpopgetdope/ace-kspkg
         size_t file_size;
         size_t file_offset;
     };
